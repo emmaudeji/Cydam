@@ -16,7 +16,7 @@ const HeroBanner = () => {
   };
 
   return (
-    <div className='w-full lg:h-[100vh] pt-40 pb-20 bg-slate-100'>
+    <div className='w-full lg:h-[100vh] pt-20 sm:pt-48 sm:pb-20 bg-slate-100 '>
         {/* <Slider {...settings}> */}
           {herobannerLinks?.map(({ id, title, img, description, btnLink1, btnText1, btnLink2, btnText2}) => {
             return (

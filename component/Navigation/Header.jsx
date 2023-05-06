@@ -26,7 +26,7 @@ const Header = ({pageheading}) => {
           onClick={() => setShowSearchBox(!showSearchBox)}>
             <AiOutlineSearch/>
           </div>
-          <div className="flex mdshowMobileNav:hidden duration-300 hover:scale-110 " onClick={() => setShowMobileNav(!showMobileNav)}>
+          <div className="flex md:hidden duration-300 hover:scale-110 " onClick={() => setShowMobileNav(!showMobileNav)}>
             {showMobileNav ? <AiOutlineClose/> : <AiOutlineMenu/>}
           </div>  
         </div>

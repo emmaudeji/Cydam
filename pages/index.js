@@ -1,6 +1,11 @@
 import HeroBanner from "@/component/Heading/HeroBanner"
 import Head from "@/component/Layout/Head"
 import { useStateContext } from "@/contextHook/StateContext"
+import Credibility from "@/component/Home/Credibility"
+import Services from "@/component/Home/Services"
+import Estate from "@/component/Home/Estate"
+import Projects from "@/component/Home/Projects"
+import Property from "@/component/Home/Property"
 
 export default function Home() {
   const {devotional} = useStateContext()
@@ -10,10 +15,12 @@ export default function Home() {
     <>
       <Head/>
       <HeroBanner/>
-      <div className='h-[80vh] border border-black'>
-        <h1 className='font-bold text-6xl'>Checking tailwind</h1>
-        {devotional}
-      </div>
+      <Credibility/>
+      <Services/>
+      <Estate/>
+      <Projects/>
+      <Property/>
+
     </>
     
   )
