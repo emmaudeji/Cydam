@@ -10,10 +10,10 @@ export default function Home() {
     <>
       <Head/>
       <HeroBanner/>
-      <main>
+      <div className='h-[80vh] border border-black'>
         <h1 className='font-bold text-6xl'>Checking tailwind</h1>
         {devotional}
-      </main>
+      </div>
     </>
     
   )
