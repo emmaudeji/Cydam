@@ -31,9 +31,12 @@ a {
 }
 
 .section-padding {
-  @apply w-full px-6 sm:px-16 lg:px-36;
+  @apply w-full px-6 sm:px-16 lg:px-36 py-40;
 }
 
+.section-padding2 {
+  @apply w-full px-6 sm:px-16 lg:px-36;
+}
 .section-container {
   @apply w-full flex px-6 sm:px-16 lg:px-36 flex-col md:flex-row;
 }
@@ -48,4 +51,8 @@ a {
 
 .btn-large {
   @apply py-3 px-6 bg-blue-700 rounded-full hover:bg-blue-600 duration-300 text-white cursor-pointer;
+}
+
+.image-style {
+  @apply w-full h-full object-cover hover:scale-105 duration-300
 }

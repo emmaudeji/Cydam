@@ -5,7 +5,7 @@ import { credibility } from "@/Data/credibility"
 
 const Credibility = () => {
   return (
-    <div className="section-padding py-20  sm:pb-40 grid md:grid-cols-2 gap-24 sm:gap-4 lg:gap-16 xl:gap-36">
+    <div className="section-padding py-40  sm:pb-40 grid md:grid-cols-2 gap-24 sm:gap-4 lg:gap-16 xl:gap-36">
         <div className="">
             <CredibilityCard/>
         </div>

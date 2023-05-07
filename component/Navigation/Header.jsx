@@ -13,7 +13,7 @@ const Header = ({pageheading}) => {
 
   return (
     <div className="fixed z-50  h-[12vh] w-fullh-[12vh] w-full  bg-slate-100 ">
-      <div className="flex items-center section-padding shadow h-[12vh] justify-between">
+      <div className="flex items-center section-padding2 shadow h-[12vh] justify-between">
 
         <Link href={`/`} className=" text-xl font-bold mr-4">Cydam Global</Link>
 
@@ -23,7 +23,7 @@ const Header = ({pageheading}) => {
 
         <div className="flex gap-3 cursor-pointer text-xl sm:text-2xl">
           <div className="duration-300 hover:scale-110"
-          onClick={() => setShowSearchBox(!showSearchBox)}>
+          onClick={() => setShowSearchBox(prev => !prev)}>
             <AiOutlineSearch/>
           </div>
           <div className="flex md:hidden duration-300 hover:scale-110 " onClick={() => setShowMobileNav(!showMobileNav)}>

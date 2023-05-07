@@ -1,7 +1,7 @@
 import React from 'react'
 import SectionHeading from '../Cards/SectionHeading'
 import { projects } from '@/Data/projects'
-import SectionImageCard from '../Cards/SectionImageCard'
+import ProjectImageCard from '../Cards/ProjectImageCard'
 
 const Projects = () => {
   return (
@@ -16,7 +16,7 @@ const Projects = () => {
             {
                 projects?.map(({ id, title, text }) => (
                     <div key={id} className="">
-                        <SectionImageCard heading={title} text={text}/>
+                        <ProjectImageCard heading={title} text={text}/>
                     </div>
                 ))
             }

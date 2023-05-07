@@ -1,11 +1,11 @@
 import HeroBanner from "@/component/Heading/HeroBanner"
 import Head from "@/component/Layout/Head"
 import { useStateContext } from "@/contextHook/StateContext"
-import Credibility from "@/component/Home/Credibility"
-import Services from "@/component/Home/Services"
-import Estate from "@/component/Home/Estate"
-import Projects from "@/component/Home/Projects"
-import Property from "@/component/Home/Property"
+import Credibility from "@/component/Sections/Credibility"
+import Services from "@/component/Sections/Services"
+import Estate from "@/component/Sections/Estate"
+import Projects from "@/component/Sections/Projects"
+import Property from "@/component/Sections/Property"
 
 export default function Home() {
   const {devotional} = useStateContext()

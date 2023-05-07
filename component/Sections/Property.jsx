@@ -1,5 +1,5 @@
 import { propertyList } from '@/Data/propertyList'
-import PropertyCard from '../Cards/PropertyCard'
+import PropertyImageCard from '../Cards/PropertyImageCard'
 import SectionHeading from '../Cards/SectionHeading'
 
 const Property = () => {
@@ -15,7 +15,7 @@ const Property = () => {
             {
                 propertyList?.map(({ id, location, price, bathroom, rooms, garage, }) => (
                     <div key={id} className="">
-                        <PropertyCard  location={location} price={price} bathroom={bathroom} bedroom={rooms} garage={garage}/>
+                        <PropertyImageCard  location={location} price={price} bathroom={bathroom} bedroom={rooms} garage={garage}/>
                     </div>
                 ))
             }
