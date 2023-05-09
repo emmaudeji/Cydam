@@ -7,7 +7,7 @@ const Property = () => {
     <div className='section-padding py-24  grid gap-24'>
         <div className="flex justify-center">
             <div className="">
-            <SectionHeading text={'Our Featured'} emphasis={'Propersties'}/>
+            <SectionHeading whitebg={true} text={'Our Featured'} emphasis={'Properties'}/>
             </div>
         </div>
 

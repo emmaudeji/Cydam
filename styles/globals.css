@@ -56,3 +56,15 @@ a {
 .image-style {
   @apply w-full h-full object-cover hover:scale-105 duration-300
 }
+
+.custom-gap {
+  @apply gap-10 sm:gap-6 
+}
+
+.hover-scale-110{
+  @apply hover:scale-110 duration-300
+}
+
+.hover-scale-blue {
+  @apply hover:text-blue-700 hover:scale-110 duration-300
+}

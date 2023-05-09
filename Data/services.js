@@ -35,7 +35,7 @@ export const services = [
     },
     {
         id: 4,
-        title: `Civil Engineering Services`,
+        title: `Civil Engineering `,
         link: `/`,
         icon: <AiOutlineWoman/>,
         linkText: `Read more`,

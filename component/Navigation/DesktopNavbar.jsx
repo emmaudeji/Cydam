@@ -8,7 +8,7 @@ const DesktopNavbar = ({active, setActive}) => {
         {
             navLinks?.map(({id, title, link}) => (
                 <div key={id} onClick={()=>setActive(title)} 
-                className={`${active===title ? `text-blue-700 scale-110` : `` } duration-300 hover:text-blue-700 hover:scale-110 `}>
+                className={`${active===title ? `text-blue-700 scale-110` : `` } duration-300 hover-scale-blue `}>
                     <Link href={link}>
                         {title}
                     </Link>

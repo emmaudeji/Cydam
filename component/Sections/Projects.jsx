@@ -8,7 +8,7 @@ const Projects = () => {
     <div className='section-padding py-24  grid gap-24 '>
         <div className="flex justify-center">
             <div className="">
-            <SectionHeading text={'Our Recent'} emphasis={'Projects'}/>
+            <SectionHeading whitebg={true} text={'Our Recent'} emphasis={'Projects'}/>
             </div>
         </div>
 

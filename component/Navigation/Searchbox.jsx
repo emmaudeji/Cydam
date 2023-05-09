@@ -1,10 +1,16 @@
-import SearchBar from './SearchBar'
+import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { dropdownVariants } from '@/animations/DropdownVariants'
 import { AiOutlineSearch } from 'react-icons/ai'
 import OnClickOutside from "@/Hooks/OnClickOutside"
+import SimpleInput from '../Forms/SimpleInput'
 
 const Searchbox = ({showSearchBox, setShowSearchBox}) => {
+  const [input, setInput] = useState('')
+
+
+ 
+console.log(input)
   return (
 
     <AnimatePresence>
@@ -22,10 +28,9 @@ const Searchbox = ({showSearchBox, setShowSearchBox}) => {
         <div className='bg-blue-50 section-padding py-10 w-full h-[80vh]'>
         <div className="grid gap-4 ">
 
-          <div className=" px-4 overflow-hidden rounded-full w-full h-14 bg-white text-black flex items-center gap-2">
-            <div className="text-lg text-zinc-400 h-full  flex items-center border-r pr-2 border-zinc-300"> <AiOutlineSearch/></div>
-            <input type="text" className='w-full h-full py-2' />
-          </div>
+          
+          <SimpleInput icon={<AiOutlineSearch/>} onChange={e => setInput(e.target.value)}/>
+
           <div className="data">
 
           </div>
