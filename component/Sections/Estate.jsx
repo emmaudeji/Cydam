@@ -5,9 +5,9 @@ import PlainCard from '../Cards/PlainCard'
 
 const Estate = () => {
   return (
-    <div className='section-padding py-24 grid md:grid-cols-2 gap-24 md:gap-16 lg:gap-24 xl:gap-36'>
+    <div className='section-padding2 pt-40 pb-20 grid md:grid-cols-2 gap-24 md:gap-16 lg:gap-24 xl:gap-36 bg-primary'>
         <div className="card">
-            <SectionImageCard heading={`We Know What A Home Is Really Worth`} text={``}/>
+            <SectionImageCard heading={`We Know What A Home Is Really Worth`} text={``} img={`/housing/interior1.jpg`}/>
         </div>
         <div className='grid gap-4'>
             {

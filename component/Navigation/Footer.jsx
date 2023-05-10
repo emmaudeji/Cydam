@@ -5,22 +5,28 @@ import SocialIcon from '../Cards/SocialIcon'
 import { services } from '@/Data/services'
 import { blog } from '@/Data/blog'
 import BlogCard from '../Cards/BlogCard'
+import { Contact } from '@/Data/contact'
 
 const Footer = () => {
   return (
-    <div className='mt-40 sm:pt-0 bg-blue-50 '>
+    <div className='mt-40 sm:mt-0 bg-primary'>
       <div className="section-padding2 py-24 w-full grid gap-10 xl:gap-16 sm:grid-cols-3 relative">
 
         <div className='sm:col-span-2 lg:col-span-1 relative mb-[200px] sm:mb-0'>
           <div className=' absolute sm:relative top-[-200px] sm:top-0'>
                 <PlainBoxCard>
-                  <div className=" text-white bg-blue-700 p-10 ">
+                  <div className=" text-white bg-blue-700 p-8 ">
                     <div className="logo">
-                      <h2 className='text-5xl font-bold '>Cydam Global</h2>
+                      <h2 className='text-4xl font-bold '>Cydam Global</h2>
                     </div>
-                    <p className='py-6 text-lg'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ducimus deserunt vitae provident voluptas quidem beatae reprehenderit magni aliquid vel, veritatis fugit laudantium blanditiis reiciendis error sit adipisci praesentium voluptatibus.
+                    <p className='py-2 text-lg '>
+                        Providing low cost housing and revamping urban lifestyle in Africa 
                       </p>
+                      <div className="pb-2">
+                        <h5 className='font-semibold'>Contact us</h5>
+                        <Contact/>
+                      </div>
+                      
                       <SocialIcon size='large'/>
                   </div>
                 </PlainBoxCard>
@@ -54,9 +60,9 @@ const Footer = () => {
               </div>
           </div>
       </div>
-      <div className="section-padding2 pb-8 flex justify-center">
+      <div className="section-padding2 pt-4 pb-8 flex justify-center border-t border-blue-200 text-sm">
         <div>
-          <p>Copyright (c) {new Date().getFullYear()}</p>
+          <p>Cydam Global Copyright (c) {new Date().getFullYear()}. All Rights Reserved</p>
         </div>
       </div>
     </div>

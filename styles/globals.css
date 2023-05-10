@@ -37,6 +37,7 @@ a {
 .section-padding2 {
   @apply w-full px-6 sm:px-16 lg:px-36;
 }
+
 .section-container {
   @apply w-full flex px-6 sm:px-16 lg:px-36 flex-col md:flex-row;
 }
@@ -62,9 +63,27 @@ a {
 }
 
 .hover-scale-110{
-  @apply hover:scale-110 duration-300
+  @apply hover:scale-110 duration-300 cursor-pointer 
 }
 
 .hover-scale-blue {
-  @apply hover:text-blue-700 hover:scale-110 duration-300
+  @apply hover:text-blue-700 hover:scale-110 duration-300 cursor-pointer 
+}
+
+
+.bg-primary {
+  @apply bg-blue-50 
+}
+
+.bg-secondary {
+  @apply bg-blue-700
+}
+
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: 4px;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
 }

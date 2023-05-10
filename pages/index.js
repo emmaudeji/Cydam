@@ -8,6 +8,8 @@ import Projects from "@/component/Sections/Projects"
 import Property from "@/component/Sections/Property"
 import Newsletter from "@/component/Sections/Newsletter"
 import Testimonial from "@/component/Sections/Testimonial"
+import WideSection from "@/component/Sections/WideSection"
+import Clientele from "@/component/Sections/Clientele"
 
 export default function Home() {
   const {devotional} = useStateContext()
@@ -21,11 +23,11 @@ export default function Home() {
       <Services/>
       <Estate/>
       <Property/>
+      <WideSection/>
       <Projects/>
       <Testimonial/>
+      <Clientele/>
       <Newsletter/>
-      
-
     </>
     
   )

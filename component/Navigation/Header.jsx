@@ -12,7 +12,7 @@ const Header = ({pageheading}) => {
   const [showSearchBox, setShowSearchBox] = useState(false);
 
   return (
-    <div className="fixed z-50  h-[12vh] w-fullh-[12vh] w-full  bg-slate-100 ">
+    <div className="fixed z-50  h-[12vh] w-fullh-[12vh] w-full  bg-primary ">
       <div className="flex items-center section-padding2 shadow h-[12vh] justify-between">
 
         <Link href={`/`} className=" text-xl font-bold mr-4">Cydam Global</Link>

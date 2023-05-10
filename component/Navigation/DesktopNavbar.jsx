@@ -4,7 +4,6 @@ import Link from "next/link"
 const DesktopNavbar = ({active, setActive}) => {
   return (
     <div className="flex w-full items-center justify-between gap-14">
-     
         {
             navLinks?.map(({id, title, link}) => (
                 <div key={id} onClick={()=>setActive(title)} 
@@ -15,10 +14,6 @@ const DesktopNavbar = ({active, setActive}) => {
                 </div>
             ))
         }
-
- 
-
-     
     </div>
   )
 }

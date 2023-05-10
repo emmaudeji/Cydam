@@ -1,13 +1,17 @@
 
 import PageHeroBanner from '@/component/Heading/PageHeroBanner'
+import Head from "@/component/Layout/Head"
+import Services from "@/component/Sections/Services"
 
 const about = () => {
   return (
     <>
-    <PageHeroBanner/>
+     <Head/>
+    <PageHeroBanner heading='About Us' page={`Home/about`}/>
     <div>
         
-        about
+   
+    <Services/>
         
     </div>
     </>

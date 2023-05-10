@@ -1,0 +1,51 @@
+export const partners = [
+    {
+        id: 0,
+        name: ``,
+        logo: `partner01.png`,
+        link: ``,
+        content: ``,
+    },
+    {
+        id: 1,
+        name: ``,
+        logo: `partner02.png`,
+        link: ``,
+        content: ``,
+    },
+    {
+        id: 2,
+        name: ``,
+        logo: `partner03.png`,
+        link: ``,
+        content: ``,
+    },
+    {
+        id: 3,
+        name: ``,
+        logo: `partner04.png`,
+        link: ``,
+        content: ``,
+    },
+    {
+        id: 4,
+        name: ``,
+        logo: `partner05.png`,
+        link: ``,
+        content: ``,
+    },
+    {
+        id: 4,
+        name: ``,
+        logo: `partner06.png`,
+        link: ``,
+        content: ``,
+    },
+    {
+        id: 4,
+        name: ``,
+        logo: `partner07.png`,
+        link: ``,
+        content: ``,
+    },
+]

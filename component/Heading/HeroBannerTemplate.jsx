@@ -7,7 +7,7 @@ export const HeroTemplate = ({title, img, description, btnLink1, btnTxt1, btnLin
   
         <div className="text ">
           <h4 className='text-base'>{title}</h4>
-          <h1 className="capitalize text-[30px]  md:text-[35px] lg:text-[50px]  font-bold leading-[40px] lg:leading-[55px] pb-2 lg:pb-6">{description}
+          <h1 className="capitalize text-[30px]  md:text-[40px] lg:text-[50px]  font-bold leading-[40px] lg:leading-[55px] pb-2 lg:pb-6">{description}
           </h1>
   
           <div className='flex gap-4'>

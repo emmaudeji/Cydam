@@ -1,11 +1,12 @@
-import { AiOutlineWoman } from "react-icons/ai"
+import {  AiOutlineProject } from "react-icons/ai"
+import {MdOutlineRealEstateAgent, MdOutlineEngineering, MdConstruction, MdOutlineFactory, MdAddRoad} from "react-icons/md"
 
 export const services = [
     {
         id: 0,
         title: `Real Estate Development`,
         link: `/estate`,
-        icon: <AiOutlineWoman/>,
+        icon: <MdOutlineRealEstateAgent/>,
         linkText: `Read more`,
         text: `Building construction sector through continuous research, improvement, and innovation as`
     },
@@ -13,7 +14,7 @@ export const services = [
         id: 1,
         title: `Building Construction`,
         link: `/construction`,
-        icon: <AiOutlineWoman/>,
+        icon: <MdConstruction/>,
         linkText: `Read more`,
         text: `Building construction sector through continuous research, improvement, and innovation as`
     },
@@ -21,7 +22,7 @@ export const services = [
         id: 2,
         title: `Energy And Waste Managent`,
         link: `/energy`,
-        icon: <AiOutlineWoman/>,
+        icon: <MdOutlineFactory/>,
         linkText: `Read more`,
         text: `Building construction sector through continuous research, improvement, and innovation as`
     },
@@ -29,7 +30,7 @@ export const services = [
         id: 3,
         title: `Project Management`,
         link: `/`,
-        icon: <AiOutlineWoman/>,
+        icon: <AiOutlineProject/>,
         linkText: `Read more`,
         text: `Building construction sector through continuous research, improvement, and innovation as`
     },
@@ -37,7 +38,7 @@ export const services = [
         id: 4,
         title: `Civil Engineering `,
         link: `/`,
-        icon: <AiOutlineWoman/>,
+        icon: <MdOutlineEngineering/>,
         linkText: `Read more`,
         text: `Building construction sector through continuous research, improvement, and innovation as`
     },
@@ -45,7 +46,7 @@ export const services = [
         id: 5,
         title: `Road Construction`,
         link: `/`,
-        icon: <AiOutlineWoman/>,
+        icon: <MdAddRoad/>,
         linkText: `Read more`,
         text: `Building construction sector through continuous research, improvement, and innovation as`
     },

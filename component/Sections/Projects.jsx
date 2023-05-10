@@ -5,7 +5,7 @@ import ProjectImageCard from '../Cards/ProjectImageCard'
 
 const Projects = () => {
   return (
-    <div className='section-padding py-24  grid gap-24 '>
+    <div className='section-padding2 pt-20 pb-40  grid gap-24 '>
         <div className="flex justify-center">
             <div className="">
             <SectionHeading whitebg={true} text={'Our Recent'} emphasis={'Projects'}/>
@@ -16,7 +16,7 @@ const Projects = () => {
             {
                 projects?.map(({ id, title, text }) => (
                     <div key={id} className="">
-                        <ProjectImageCard heading={title} text={text}/>
+                        <ProjectImageCard border={'blue'} heading={title} text={text}/>
                     </div>
                 ))
             }

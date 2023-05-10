@@ -1,32 +1,32 @@
-import { AiFillAlipayCircle, AiOutlineLaptop, AiFillLeftCircle, AiFillAudio } from "react-icons/ai"
 
+import {MdOutlineHandshake, MdOutlineEco, MdOutlineEngineering, MdHouseSiding} from "react-icons/md"
 export const credibility = [
     {
         id: 0,
-        title: '4586',
-        text: 'Awards Won',
-        icon: <AiFillAlipayCircle/>,
+        title: '6',
+        text: `Global Partnership`,
+        icon: <MdOutlineHandshake/>,
         link: '/about'
     },
     {
         id: 1,
-        text: 'Listings Per Week ',
-        title: '789',
-        icon: <AiOutlineLaptop/>,
+        text: 'Low cost Housing ',
+        title: '100%',
+        icon: <MdHouseSiding/>,
         link: '/about'
     },
     {
         id: 2,
-        text: 'Agents Working',
-        title: '483',
-        icon: <AiFillLeftCircle/>,
+        text: 'Professional Engineers',
+        title: '183',
+        icon: <MdOutlineEngineering/>,
         link: '/about'
     },
     {
         id: 3,
-        text: 'Happy Customers',
-        title: '789',
-        icon: <AiFillAudio/>,
+        text: 'Eco Friendly Projects',
+        title: '100%',
+        icon: <MdOutlineEco/>,
         link: '/about'
     },
 ]
