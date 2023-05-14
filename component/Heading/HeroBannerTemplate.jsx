@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const HeroTemplate = ({title, img, description, btnLink1, btnTxt1, btnLink2, btnTxt2}) => {
     return (
-      <div className='section-padding2 items-center grid md:grid-cols-2 gap-8 lg:gap-14'>
+      <div className='section-padding2 items-center grid md:grid-cols-2 gap-8 lg:gap-14 xl:gap-24'>
   
         <div className="text ">
           <h4 className='text-base'>{title}</h4>

@@ -6,7 +6,7 @@ export const propertyList = [
         bathroom: 2,
         garage: 1,
         price: 3000,
-        img: `housing/house3.jpg`
+        img: `/housing/house3.jpg`
     },
     {
         id: 1,
@@ -15,7 +15,7 @@ export const propertyList = [
         bathroom: 2,
         garage: 1,
         price: 44444,
-        img: `housing/house4.jpg`
+        img: `/housing/house4.jpg`
     },
     {
         id: 2,
@@ -24,7 +24,7 @@ export const propertyList = [
         bathroom: 2,
         garage: 1,
         price: 5555,
-        img: `housing/house5.jpg`
+        img: `/housing/house5.jpg`
     },
     {
         id: 3,
@@ -33,7 +33,7 @@ export const propertyList = [
         bathroom: 2,
         garage: 1,
         price: 2343,
-        img: `housing/estate3.jpg`
+        img: `/housing/estate3.jpg`
     },
     {
         id: 4,
@@ -42,7 +42,7 @@ export const propertyList = [
         bathroom: 2,
         garage: 1,
         price: 6564,
-        img: `housing/house6.jpg`
+        img: `/housing/house6.jpg`
     },
     {
         id: 5,
@@ -51,6 +51,6 @@ export const propertyList = [
         bathroom: 2,
         garage: 1,
         price: 5432,
-        img: `housing/interior-stairs.jpg`
+        img: `/housing/interior-stairs.jpg`
     },
 ]

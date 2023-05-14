@@ -78,6 +78,20 @@ a {
 .bg-secondary {
   @apply bg-blue-700
 }
+.bg-tertiary {
+  @apply bg-blue-400
+}
+
+.text-primary {
+  @apply text-blue-50 
+}
+
+.text-secondary {
+  @apply text-blue-700
+}
+.text-tertiary {
+  @apply text-blue-400
+}
 
 .scrollbar-hidden {
   -ms-overflow-style: none;

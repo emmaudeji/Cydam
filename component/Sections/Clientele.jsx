@@ -4,11 +4,11 @@ import { partners } from '@/Data/partners'
 import { SliderBtn } from '@/utils/SliderBtn'
 
 
-const Clientele = () => {
+const Clientele = ({about}) => {
     const scrollRef = useRef(null)
 
   return (
-    <div className='section-padding2 relative pb-40 bg-primary grid gap-20'>
+    <div className={`section-padding2 relative pb-40  grid gap-20 ${about ? 'pt-20' : 'bg-primary'}`}>
         <div className='flex w-full justify-center'>
             <div>
                 <SectionHeading whitebg='whitebg' emphasis={`Partners`} text={`Our Valuable`}/> 
@@ -20,13 +20,11 @@ const Clientele = () => {
                 
                 {
                     partners?.map(({id,logo}) => (
-                        <div className="">
-                            <div className={logo === partners[partners.length - 1].logo ? "w-24" : "w-36"}key={id}>
+                        <div key={id} className="">
+                            <div className={logo === partners[partners.length - 1].logo ? "w-24" : "w-36"} >
                             <img src={logo} alt="" className='image-style'/>
                         </div>
-
                         </div>
-                        
                     ))
                 }
             </div>

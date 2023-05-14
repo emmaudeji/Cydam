@@ -19,11 +19,15 @@ export default function Home() {
     <>
       <Head/>
       <HeroBanner/>
-      <Credibility/>
+      <Credibility heading={'In Our Work We Have Pride, Quality Is What We Provide. We Build Tomorrow at low cost'} text={`Cydam Global offers varieties of construction and housing projects at affordable rate to enhance the quality of living in Africa.`} img={`construction-men-designing.jpg`} />
       <Services/>
       <Estate/>
       <Property/>
-      <WideSection/>
+      <WideSection 
+        heading='We Offer The Most Complete Urban Development Services.'
+        text='We are not just A Real Estate Company, we synergize with the government to provide the best urban development services essential for the wellbeing of citizens espacially in Africa'
+        img='/housing/estate3.jpg'
+      />
       <Projects/>
       <Testimonial/>
       <Clientele/>
