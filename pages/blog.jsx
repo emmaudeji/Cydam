@@ -1,9 +1,20 @@
-import React from 'react'
+import PageHeroBanner from "@/component/Heading/PageHeroBanner"
+import PageConstruction from "@/component/PageConstruction"
+import Head from "@/component/Layout/Head"
 
-const blog = () => {
+const Blog = () => {
   return (
-    <div>blog</div>
+    <>
+    <Head/>
+      <PageHeroBanner heading='Our Blog' img="/housing/estate2.jpg" page={`Home > Services > Blog`}/>
+
+      <div>
+        <PageConstruction/>
+    </div>
+    
+    </>
+    
   )
 }
 
-export default blog
+export default Blog

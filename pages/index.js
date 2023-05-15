@@ -27,6 +27,7 @@ export default function Home() {
         heading='We Offer The Most Complete Urban Development Services.'
         text='We are not just A Real Estate Company, we synergize with the government to provide the best urban development services essential for the wellbeing of citizens espacially in Africa'
         img='/housing/estate3.jpg'
+        btnText='Contact Us' btnLink='/contact'
       />
       <Projects/>
       <Testimonial/>

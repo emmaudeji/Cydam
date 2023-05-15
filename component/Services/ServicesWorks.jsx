@@ -1,9 +1,9 @@
 import { FaRocket, FaHandsHelping, FaIndustry, FaDollarSign } from 'react-icons/fa'
-import {FiWind} from 'react-icons/fi'
-import {BsCheckCircleFill} from 'react-icons/bs'
+import {FiWind, FiRefreshCcw} from 'react-icons/fi'
+import {BsCheckCircleFill, BsLightningCharge} from 'react-icons/bs'
 import {RiPlantFill} from 'react-icons/ri'
-import { AiOutlineSmile } from 'react-icons/ai'
-
+import { AiOutlineSmile, AiOutlineCloud } from 'react-icons/ai'
+import {IoIosRocket} from 'react-icons/io'
 
 export const ServicesWorks = {
     estate: [
@@ -61,4 +61,33 @@ export const ValuesConstruction = [
         title: `Client Satisfaction:`,
         text: `Our Success Depends on Your Satisfaction.`
     },
+]
+
+export const ValuesEnergy = [
+    {
+        id: 0,
+        icon: <FiRefreshCcw /> ,
+        title: `Innovative Technologies`,
+        text: `Harnessing the Power of Renewable Energy `
+    },
+    {
+        id: 1,
+        icon: <IoIosRocket/>,
+        title: `Efficient Management`,
+        text: `Expert Solutions for Your Energy and Waste Needs.`
+    },
+    {
+        id: 2,
+        icon: <BsLightningCharge/>,
+        title: `	
+        Sustainable Solutions`,
+        text: `Reducing Waste and Saving Energy for a Cleaner Future.`
+    },
+    {
+        id: 3,
+        icon: <AiOutlineCloud/>,
+        title: `Environmental Responsibility`,
+        text: `Building a Greener Future, One Project at a Time.`
+    },
+
 ]
