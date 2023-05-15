@@ -19,7 +19,7 @@ const Team = () => {
 
             <div className='md:col-span-2 lg:col-span-3 overflow-auto'>
 
-                <div className="flex gap-8 ">
+                <div className="flex gap-8 pb-4">
                     {
                         team?.map(({id, name, title, img, fb, ln}) => (
                                 <div key={id}>

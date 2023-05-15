@@ -13,13 +13,12 @@ const Blog = () => {
             </div>
         </div>
 
-     
             <div className="overflow-auto w-full">
-                <div className="flex gap-6 pb-2">
+                <div className="flex gap-6 pb-6">
                     {
                         blog?.map(({id, title,author, comment,  highlight, date, img, })=>(
                             <div key={id}>
-                                <div className='w-80 h-full'>
+                                <div className='w-[330px] h-full'>
                                    <BlogImageCard title={title} img={img} highlight={highlight} author={author} date={date} comment={comment}/>
                                 </div>
                             </div>

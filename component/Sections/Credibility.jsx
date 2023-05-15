@@ -10,7 +10,7 @@ const Credibility = ({heading, text, img}) => {
             <CredibilityCard heading={heading} text={text} img={img}/>
         </div>
 
-        <div className="overflow-hidden rounded-[100px] gap-0 rounded-br-none w-full h-full grid grid-cols-2 shadow-xl">
+        <div className="overflow-hidden rounded-[60px] gap-0 rounded-br-none w-full h-full grid grid-cols-2 shadow-xl border-2">
             {
                 credibility?.map(({ id, title, text, icon}) => (
                     <div key={id} className="">

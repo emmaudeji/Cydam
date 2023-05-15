@@ -31,7 +31,7 @@ export default function Home() {
       />
       <Projects/>
       <Testimonial/>
-      <Clientele/>
+      <Clientele home={true}/>
       <Newsletter/>
     </>
     

@@ -1,29 +1,4 @@
-import TextCard from "../Cards/TextCard"
-import GridNotes from "../Cards/GridNotes"
 import { useState } from "react"
-
-const About = () => {
-  return (
-    
-    <div className="section-padding2 pt-52 pb-40 w-full bg-blue-50">
-        <div className="grid md:grid-cols-2 gap-10">
-            <div className="img">
-                <TextCard heading='Leading Company in Construction and Real Estate Development '
-                component={<AboutCompany/>}
-                />
-            </div>
-
-            <div>
-                <GridNotes note1='Providing Housing and Development Services at low cost' note2='Global Partnership for Building and Construction of Urban Projects' img1='/construction/project03-650x700.jpg' img2='/construction/project05-650x700.jpg'/>
-            </div>
-
-        </div>
-    </div>
-  )
-}
-
-export default About
-
 
 export const AboutCompany = () => {
     const [index, setIndex] = useState(0)
@@ -31,7 +6,7 @@ export const AboutCompany = () => {
     const aboutlist = [<Vision/>, <Mission/>, <Philosophy/>,]
     return (
         <div className="grid gap-4">
-            {/* heading */}
+   
             <div className="flex gap-2">
                 {
                     ['Vision', 'Mission', 'Philosopy'].map((item, i) => (
@@ -42,7 +17,7 @@ export const AboutCompany = () => {
                     ))
                 }
             </div>
-            {/* text */}
+          
             <div className="capitalize">
                 {
                     aboutlist[index]
@@ -76,9 +51,7 @@ export const Mission = () => (
         <li>
         To build a better future for African communities by developing homes that are not only eco-responsible, but also functional, beautiful, and durable.
         </li>
-        {/* <div className="flex gap-6 font-semibold text-blue-200 text-sm">
-            <p>Reliable</p><p>D</p><p>Affordable</p>
-        </div> */}
+        
     </ul>
 )
 export const Philosophy = () => (
@@ -90,8 +63,6 @@ export const Philosophy = () => (
         We believe that by combining cutting-edge technology with a deep understanding of our clients' needs, we can create homes and communities that are truly transformative.
         </p>
         <p>We Believe in Success through exceptional value and lasting relationships.</p>
-        {/* <div className="flex gap-6 font-semibold text-blue-200 text-sm">
-        <p>Affordable</p> <p>Reliable</p><p>Quality</p>
-        </div> */}
+        
     </div>
 )

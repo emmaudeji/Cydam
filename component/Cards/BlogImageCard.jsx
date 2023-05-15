@@ -6,7 +6,7 @@ import { MdOutlineArrowRightAlt } from 'react-icons/md'
 
 const BlogImageCard = ({id, title, author, comment,  highlight, date, img,}) => {
   return (
-    <div className='w-full h-full pb-6 rounded-[30px] rounded-tl-none bg-primary hover:shadow-xl duration-300 cursor-pointer overflow-hidden'>
+    <div className='w-full h-full pb-6 rounded-[30px] rounded-tl-none border-2 bg-white hover:shadow-xl duration-300 cursor-pointer overflow-hidden'>
         
         <div className="w-full h-48 overflow-hidden">
             <img src={img} alt="blog-img" className='image-style'/>
