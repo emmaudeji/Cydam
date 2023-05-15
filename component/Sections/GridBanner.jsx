@@ -17,9 +17,9 @@ const GridBanner = ({page , heading, text, img, component}) => {
                     </div>
                 </div>
 
-                <div className="w-full py-16 md:pt-28 pl-6 lg:pr-36 h-full">
+                <div className="w-full py-16 xl:pt-20 pl-6 lg:pr-36 h-full">
                     <div>
-                        <h2 className="text-4xl md:text-5xl font-bold pb-6">
+                        <h2 className="text-4xl xl:text-5xl font-bold pb-6">
                             {heading}
                         </h2>
                         <p className='text-lg'>

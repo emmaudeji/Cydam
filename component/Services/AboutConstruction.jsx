@@ -1,20 +1,20 @@
 import { MdArrowCircleRight } from 'react-icons/md'
 import Link from 'next/link'
 
-const AboutRealEstate = ({btnText, btnLink}) => {
+const AboutConstruction = ({btnText, btnLink}) => {
   return (
     <div className="grid gap-4">
             
             <h5 className="text-lg font-semibold ">
-             We build homes and cities that are modern and nurturing, clean and purposeful and make it affordable for middle class families in Africa with maximum luxury .
+            The strength, durability and very precise assembly as well as the cold-rolling gives you entirely new opportunities and solid solutions.
             </h5>
             <div className="grid gap-2 capitalize">
             {
                 [
-                    `Affordable Luxury Homes for all`,
-                    `Modern Designs, Affordable Prices`,
+                    `Build with our steel frame solutions`,
+                    `Reduce Project Costs with modern technology`,
                    ` Exceptional Quality, Unbeatable Value`,
-                    `Get the best support among all vendors`,
+                    `Obtain the benefits of cold-rolled steel`,
                    
                 ].map((item, i)=>(
                     <div className="flex gap-4" key={i}>
@@ -30,4 +30,4 @@ const AboutRealEstate = ({btnText, btnLink}) => {
   )
 }
 
-export default AboutRealEstate
+export default AboutConstruction

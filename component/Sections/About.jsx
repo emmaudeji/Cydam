@@ -43,7 +43,7 @@ export const AboutCompany = () => {
                 }
             </div>
             {/* text */}
-            <div className="">
+            <div className="capitalize">
                 {
                     aboutlist[index]
                 }
@@ -55,42 +55,43 @@ export const AboutCompany = () => {
 export const Vision = () => (
     <div className="grid gap-3">
         <p className="">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae sed, beatae inventore cupiditate quaerat 
+        Welcome to our company, where we believe that everyone deserves a modern, affordable, and sustainable home.  Our vision is to build a better future, one home at a time, and we invite you to join us on this journey.
         </p>
         <p>
-            Adipisicing elit. Repellat voluptas ratione nihil. Nulla quae deleniti unde dolore excepturi magni quis? Repudiandae, iste? Minima a accusamus dolores beatae optio tempore!
+        We are proud to offer real estate development, construction, and engineering services that utilize innovative cold-rolled steel technology to reduce costs and improve efficiency.
         </p>
         <div className="flex gap-6 font-semibold text-blue-200 text-sm">
-            <p>Reliable</p><p>Quality</p><p>Affordable</p>
+            <p>Reliable</p><p>Durable</p><p>Affordable</p>
         </div>
     </div>
 )
 export const Mission = () => (
     <ul className="grid gap-3">
         <li className="">
- inventore cupiditate quaerat eveniet fuga aspernatur debitis iste quae.
+        To make affordable, sustainable, and modern housing accessible to everyone, using innovative and best-in-class construction practices.
         </li>
         <li>
-            Repellat voluptas ratione nihil. Nulla quae deleniti unde dolore accusamus dolores beatae optio tempore!
+        To transform the real estate industry in Africa by delivering exceptional value and quality to our clients through our commitment to innovation, sustainability, and affordability.
         </li>
         <li>
-            Adipisicing elit. Repellat voluptas ratione nihil. Nulla quae Repudiandae, iste? Minima a accusamus dolores beatae optio tempore!
+        To build a better future for African communities by developing homes that are not only eco-responsible, but also functional, beautiful, and durable.
         </li>
-        <div className="flex gap-6 font-semibold text-blue-200 text-sm">
-            <p>Reliable</p><p>Quality</p><p>Affordable</p>
-        </div>
+        {/* <div className="flex gap-6 font-semibold text-blue-200 text-sm">
+            <p>Reliable</p><p>D</p><p>Affordable</p>
+        </div> */}
     </ul>
 )
 export const Philosophy = () => (
     <div className="grid gap-3">
         <p className="">
-            consectetur adipisicing elit. Recusandae sed, beatae inventore cupiditate quaerat eveniet fuga aspernatur debitis iste quae.
+        We believe Sustainable development and responsible construction practices are key to building a brighter future for Africa.
         </p>
         <p>
-             atione nihil. Nulla quae deleniti unde dolore excepturi magni quis? Repudiandae, iste? Minima a accusamus dolores beatae optio tempore! Repellat voluptas r
+        We believe that by combining cutting-edge technology with a deep understanding of our clients' needs, we can create homes and communities that are truly transformative.
         </p>
-        <div className="flex gap-6 font-semibold text-blue-200 text-sm">
+        <p>We Believe in Success through exceptional value and lasting relationships.</p>
+        {/* <div className="flex gap-6 font-semibold text-blue-200 text-sm">
         <p>Affordable</p> <p>Reliable</p><p>Quality</p>
-        </div>
+        </div> */}
     </div>
 )

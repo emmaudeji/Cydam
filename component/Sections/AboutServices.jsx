@@ -10,18 +10,18 @@ const AboutServices = ({heading, component, note1, note2, note3, img1, img2}) =>
 
               <div className="grid h-full md:grid-cols-2 gap-10 xl:gap-36 items-center">
                   <div className="h-full">
-                    <div>
+                    
                     <TextCard heading={heading}
-                      component={component}
+                      component={component} 
                       />
-                    </div>
+                  
                       
                   </div>
       
                   <div className='h-full'>
-                      <div>
+                     
                       <GridNotes note1={note1} note2={note2} note3={note3} img1={img1} img2={img2}/>
-                      </div>
+                     
                   </div>
       
               </div>

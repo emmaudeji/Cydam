@@ -18,25 +18,30 @@ const estate = () => {
       <PageHeroBanner heading='Real Estate Development' img="/housing/estate2.jpg" page={`Home > Services > Real Estate`}/>
 
       <AboutServices
-      heading={`Quality & Reability With 100% Satisfaction at the least possible cost`}
-      note1='Real estate development and industrialization' note2='Waste management and Energy generation' note3='Construction and Project Management' img1='/construction/project03-650x700.jpg' img2='/construction/project05-650x700.jpg'
-      component={<AboutRealEstate/>}
+      heading={`Sustainable housing focused on promoting African architecture`}
+      note1='Elevating African Real Estate with Quality and Style.' note2='Innovation Meets Affordability in Our Steel Homes' note3='Making Home Ownership a Reality for All' img1='/housing/estate3.jpg' img2='/housing/steel-building.png'
+      component={<AboutRealEstate btnText='Own A Home' btnLink='#properties'/>}
+      
       />
           
           <GridBanner 
             page='estate'
-            heading='We Make Construction Dream Into Reality'
-            text='We provide expert management of the relationship between value, time and cost from inception to completion. We do this through our global experts, who possess core services'
+            heading='We Bring Your Home Ownership Dream Into Reality'
+            text='We pride ourselves on delivering exceptional quality and value to our clients through the use of innovative and sustainable building practices, while making modern, steel-framed homes affordable to all classes of people in Africa.'
             img='/housing/house2.jpg'
             component={ServicesWorks.estate}
             />
 
           <WideSection
-             heading='We Offer The Most Complete Urban Development Services.'
-             text='We are not just A Real Estate Company, we synergize with the government to provide the best urban development services essential for the wellbeing of citizens espacially in Africa'
-             img='/housing/estate2.jpg'
+             heading='We Offer Innovative Real Estate Development Services.'
+             text='We work with builders, manufacturers, academia, real estate agents, home owners and Government to create designs and build a new generation of African homes from the first growing modern and middle class to the high class families in Africa'
+             img='/housing/steel-hut-estate.png'
+             btnText='Contact Us' btnLink='/contact'
           />
-          <Property/>
+          <div id="properties">
+            <Property/>
+          </div>
+          
           <Services/>
           <Clientele about='services'/>
           <Newsletter/>

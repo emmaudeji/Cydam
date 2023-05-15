@@ -1,7 +1,8 @@
 import React from 'react'
 import { AiFillPlayCircle } from 'react-icons/ai'
+import Link from 'next/link'
 
-const WideSection = ({heading, text, img}) => {
+const WideSection = ({heading, text, img, btnText, btnLink}) => {
   return (
     <div className=' h-[70vh] capitalize relative'>
       
@@ -22,8 +23,8 @@ const WideSection = ({heading, text, img}) => {
                     
                 </p>
                 <div className='flex items-center gap-4' >
-                    <div className='text-[4em] text-blue-400 hover-scale-110 '><AiFillPlayCircle/> </div>
-                    <p className='font-bold text-xl'>How it works</p>
+                    <Link href={btnLink}  className='text-lg bg-blue-400 hover:bg-blue-700 duration-300 hover:text-white px-10 py-4 rounded-full'> {btnText} </Link>
+                    
                 </div>
            </div>
       </div>

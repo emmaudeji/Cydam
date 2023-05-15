@@ -12,7 +12,7 @@ const PageHeroBanner = ({heading, img, page}) => {
 
     {/* content */}
     <div className='section-padding absolute top-0 bottom-0 w-full bg-gradient-to-t from-black text-white flex justify-center'>
-         <div className=''>
+         <div className='w-full text-center'>
             <h2 className='capitalize text-4xl sm:text-5xl font-bold pb-2 '>
               {heading}
             </h2>
