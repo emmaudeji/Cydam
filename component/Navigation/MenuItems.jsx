@@ -34,8 +34,6 @@ const MenuItems = ({menu, active, setActive, mobile, setShowMobileNav}) => {
             )
         }
         </div>
-        
-        
     </li>
   )
 }
