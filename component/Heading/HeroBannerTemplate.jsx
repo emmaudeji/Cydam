@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const HeroTemplate = ({title, img, description, btnLink1, btnTxt1, btnLink2, btnTxt2}) => {
     return (
-      <div className='section-padding2 items-center grid md:grid-cols-2 gap-8 lg:gap-14 xl:gap-24'>
+      <div className='section-padding2 items-center grid md:grid-cols-2 gap-8 lg:gap-14 xl:gap-24 '>
   
         <div className="text ">
           <h4 className='text-base'>{title}</h4>
@@ -11,8 +11,8 @@ export const HeroTemplate = ({title, img, description, btnLink1, btnTxt1, btnLin
           </h1>
   
           <div className='flex gap-4'>
-            <Link href={`${btnLink1}`}> <BtnLarge text={`Learn more`}/></Link>
-            <Link href={`${btnLink2}`}><BtnLarge text={btnTxt2}/></Link>
+            {btnLink1 ? <Link href={`${btnLink1}`}> <BtnLarge text={btnTxt1}/></Link> : null}
+            {btnLink2 ? <Link href={`${btnLink2}`}><BtnLarge text={btnTxt2}/></Link> : null }
           </div>
         </div>
   

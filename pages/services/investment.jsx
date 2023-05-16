@@ -6,7 +6,6 @@ import AboutServices from "@/component/Sections/AboutServices"
 import GridBanner from "@/component/Sections/GridBanner"
 import Newsletter from "@/component/Sections/Newsletter"
 import Services from "@/component/Sections/Services"
-import Projects from "@/component/Sections/Projects"
 import AboutInvestment from "@/component/Services/AboutInvestment"
 import { ValuesInvestment } from "@/component/Services/ServicesWorks"
 
