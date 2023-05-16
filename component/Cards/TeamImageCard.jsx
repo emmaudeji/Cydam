@@ -16,15 +16,16 @@ const TeamImageCard = ({name, title, img, fb, ln}) => {
 
         <div className=" px-8 py-2 w-[95%] h-[20%] absolute bottom-0 right-0 ">
                 
-                    <div className="flex justify-between items-center">
+                    <div className="flex w-full justify-between items-center">
                         <div className="pt-4">
-                        <h5 className='text-lg font-semibold leading-3'>{name}</h5>
-                        <p className="">{title}</p>
+                          <h5 className='text-lg font-semibold leading-3'>{name}</h5>
+                          <p className="">{title}</p>
                         </div>
-                        <div className="flex gap-1 text-3xl text-slate-400 "> 
-                        <Link href={fb} className="hover:text-blue-400 duration-300"><AiFillFacebook/></Link >
-                        <Link href={ln} className="hover:text-blue-400 duration-300"><AiFillLinkedin/> </Link >
-                        </div>
+
+                        {/* <div className="flex gap-1 text-3xl text-slate-400 "> 
+                          <Link href={fb} className="hover:text-blue-400 duration-300"><AiFillFacebook/></Link >
+                          <Link href={ln} className="hover:text-blue-400 duration-300"><AiFillLinkedin/> </Link >
+                        </div> */}
 
                     </div>
            

@@ -1,7 +1,6 @@
 import {useState} from 'react'
 import SimpleInput from '../Forms/SimpleInput'
 import { AiOutlineMail } from 'react-icons/ai'
-import PlainBoxCard from '../Cards/PlainBoxCard'
 
 const Newsletter = () => {
     const [email, setEmail] = useState('')
@@ -26,7 +25,7 @@ const Newsletter = () => {
 
             </div>
             
-            <div className="absolute top-40 right-0 w-[90%] rounded-[50px] rounded-tl-none bg-blue-700 grid gap-4 shadow-xl py-6 px-10 ">
+            <div className="absolute top-40 right-0 w-[90%] rounded-[50px] rounded-tl-none bg-blue-700 grid gap-4 shadow-xl py-6 px-4 sm:px-10  ">
             
                 <div className="font-bold text-white  md:hidden">
                     <h4>GET INSTANT UPDATES</h4>

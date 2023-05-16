@@ -1,4 +1,3 @@
-import React from 'react'
 import TextCard from '../Cards/TextCard'
 import GridNotes from '../Cards/GridNotes'
 

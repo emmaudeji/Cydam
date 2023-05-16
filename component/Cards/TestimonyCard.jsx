@@ -1,7 +1,8 @@
 import Slider from "react-slick";
 import { SimpleSlider } from "@/Hooks/SimpleSlider";
+import { testimony } from "@/Data/testimony";
 
-const TestimonyCard = ({heading, testimony}) => {
+const TestimonyCard = ({heading, }) => {
 
     
     return (

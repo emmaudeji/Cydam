@@ -7,14 +7,14 @@ export const contact = [
         branch: `Head Office`,
         phone1: +4581869997,
         phone2: ``,
-        email: ``
+        email: `info@cydamglobal.com`
     },
     {
         id: 1,
         address: `16 Nkwere Crescent Area 11 Garki Abuja, Nigeria`,
         branch: `Abuja Office`,
         phone1: +2349096717062,
-        phone2: +2349069336691,
+        phone2: '',
         email: ``
     },
 ]

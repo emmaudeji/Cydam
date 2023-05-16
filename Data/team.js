@@ -1,42 +1,59 @@
 export const team = [
     {
         id: 0,
-        name: `Emeka Nduka`,
-        title: `General Assitance`,
+        name: `Dr. Abi Assadi`,
+        title: `President, Clark Technology`,
         fb: ``,
         ln: ``,
-        img: `profile1.webp`
+        img: `/profile/ABI ASSADI.png`
     },
     {
         id: 1,
-        name: `Emeka Nduka`,
-        title: `Project Manager`,
+        name: `Alan Wong, PE`,
+        title: ``,
         fb: ``,
         ln: ``,
-        img: `profile2.webp`
+        img: `/profile/ALAN WONG.png`
     },
     {
         id: 2,
-        name: `Emeka Nduka`,
-        title: `HR`,
+        name: `DER Stephanian`,
+        title: `COO Enviro Pac`,
         fb: ``,
         ln: ``,
-        img: `profile2.webp`
+        img: `/profile/DER STEPANIAN.png`
     },
     {
         id: 3,
-        name: `Emeka Nduka`,
-        title: `Electrical Engineer`,
+        name: `Jesper Jenson`,
+        title: `Md/Ceo C & J Group`,
         fb: ``,
         ln: ``,
-        img: `profile2.webp`
+        img: `/profile/Jesper Jenson.png`
     },
     {
         id: 4,
-        name: `Emeka Nduka`,
-        title: `Civil Engineer`,
+        name: `Lloyd J. Prevost`,
+        title: `Chairman Enviro Pac`,
         fb: ``,
         ln: ``,
-        img: `profile1.webp`
+        img: `/profile/LLOYD.png`
+    },
+    {
+        id: 5,
+        name: `PER Leth`,
+        title: `CEO WEMG`,
+        fb: ``,
+        ln: ``,
+        img: `/profile/PER LETH.png`
+    },
+    {
+        id: 6,
+        name: `Ron Sleight`,
+        title: `President, Evergreen `,
+        fb: ``,
+        ln: ``,
+        img: `/profile/RON SLEIGHT.png`
     },
 ]
+

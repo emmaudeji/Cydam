@@ -1,6 +1,7 @@
 import PageHeroBanner from "@/component/Heading/PageHeroBanner"
 import PageConstruction from "@/component/PageConstruction"
 import Head from "@/component/Layout/Head"
+import Newsletter from "@/component/Sections/Newsletter"
 
 const Projects = () => {
   return (
@@ -11,6 +12,7 @@ const Projects = () => {
       <div>
         <PageConstruction/>
     </div>
+    <Newsletter/>
     
     </>
     

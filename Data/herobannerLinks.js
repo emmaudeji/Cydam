@@ -4,7 +4,7 @@ export const herobannerLinks = [
         title: `REAL ESTATE DEVELOPMENT`,
         description: `Affordable Housing: The Future Of Urban Development`,
         btnLink1: `/services/estate`,
-        btnText1: `Find Properties  >`,
+        btnText1: `Find Properties`,
         btnLink2: ``,
         btnText2: ``,
         img: `/housing/house1.jpg`

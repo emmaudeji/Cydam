@@ -16,7 +16,7 @@ const MobileNavbar = ({active, setActive, showMobileNav,
       initial='hidden'
       animate='visible'
       exit='exit'
-      className=" bg-blue-50 w-[70vw] shadow-2xl pt-12 ">
+      className=" bg-blue-50 w-[85vw] shadow-2xl max-h-[88vh] overflow-y-auto">
       
       <OnClickOutside
           show={showMobileNav}
@@ -24,8 +24,10 @@ const MobileNavbar = ({active, setActive, showMobileNav,
           component={
       <ul className="grid w-full ">
         {
-            navLinks?.map((item) => (
-              <MenuItems menu={item} active={active} setActive={setActive} mobile={true} setShowMobileNav={setShowMobileNav}/>
+            navLinks?.map((item, i) => (
+              <div key={i}>
+                <MenuItems menu={item} active={active} setActive={setActive} mobile={true} setShowMobileNav={setShowMobileNav}/>
+              </div>
             ))
         }  
       </ul> } />
