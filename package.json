@@ -13,6 +13,7 @@
     "dotenv": "^16.0.3",
     "email-js": "^2.0.2",
     "framer-motion": "^10.12.8",
+    "google-map-react": "^2.2.1",
     "next": "13.4.1",
     "postcss": "8.4.23",
     "react": "18.2.0",

@@ -16,7 +16,7 @@ const mining = () => {
     description={`
     At Cydam Global, we are at the forefront of driving innovation in the mining and manufacturing industries. With our deep expertise and cutting-edge solutions, we revolutionize the way resources are extracted, processed, and transformed into high-quality products. Our end-to-end solutions encompass every stage, from efficient mining operations to state-of-the-art manufacturing processes. We leverage advanced technologies and industry best practices to maximize efficiency, minimize costs, and deliver exceptional results. As your trusted partner, we empower your business to stay ahead of the competition by embracing the latest advancements in mining and manufacturing. Discover how our expertise can unlock new possibilities for your operations and propel your business to new heights of success in the dynamic world of mining and manufacturing.
     `}/>
-      <PageHeroBanner heading='Logistics And Export ' img="/mining/factory.jpg" page={`Home > Services > Manufacturing`}/>
+      <PageHeroBanner heading='Mining And Manufacturing ' img="/mining/factory.jpg" page={`Home > Services > Manufacturing`}/>
 
       <AboutServices
       heading={`Innovative Processes, Sustainable Practices: Redefining Mining and Manufacturing`}

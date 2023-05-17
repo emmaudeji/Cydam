@@ -3,7 +3,7 @@ import Head from "next/head";
 const HeadComponent = ({
   title=`Cydam Global`, 
   description=`Our company is a dynamic and innovative organization that provides a wide range of services including real estate development, construction and engineering, energy and waste management, mining and manufacturing, logistics and export, investment and free trade zone. We are committed to delivering high-quality solutions to our clients by utilizing cutting-edge technology and employing a team of experienced professionals. Our aim is to provide affordable and sustainable solutions that meet the needs of our clients while promoting economic growth and social responsibility.`, 
-  keyword=`Real Estate, Construction, Building, Waste Management, Rent, Sales, Renewable Energy, Housing, Estate Developement, Property search, Energy`}) => {
+  keyword=`Real Estate, Construction, Building, Waste Management, Rent, Sales, Renewable Energy, Housing, Estate Developement, Property search, Energy, Mining, Manufacturing`}) => {
   return (
     <Head>
         <title>{title}</title>

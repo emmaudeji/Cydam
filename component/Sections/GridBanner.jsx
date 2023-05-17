@@ -33,12 +33,12 @@ const GridBanner = ({page , heading, text, img, component}) => {
             <div className="grid md:grid-cols-2 h-full w-full lg:w-[70vw] xl:w-[60vw] bg-blue-50 ">
                 {
                     component?.map(({id, title,text, icon}) => (
-                        <div className="py-10 px-6 flex items-center border gap-4 " key={id}>
+                        <div className="py-8 px-6 flex items-center border gap-4 " key={id}>
                             <div className="text-6xl">
                                 <p>{icon}</p>
                             </div>
                             <div className="">
-                                <h4 className="text-2xl font-bold text-tertiary hover:text-blue-700 duration-300 pb-4 cursor-pointer">
+                                <h4 className="text-2xl font-bold text-tertiary hover:text-blue-700 duration-300  cursor-pointer">
                                     {title}
                                 </h4>
                                 <p>{text}</p>
