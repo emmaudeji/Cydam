@@ -3,6 +3,7 @@ import PageHeroBanner from "@/component/Heading/PageHeroBanner"
 import Head from "@/component/Layout/Head"
 import ContactSection from "@/component/Sections/ContactSection"
 import Newsletter from "@/component/Sections/Newsletter"
+import ContactDetails from "@/component/Sections/ContactDetails"
 
 const contact = () => {
   return (
@@ -12,6 +13,7 @@ const contact = () => {
 
       <div>
        <ContactSection/>
+       <ContactDetails/>
        <GoogleMap/>
     </div>
     <Newsletter/>

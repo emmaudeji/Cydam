@@ -2,6 +2,7 @@ import React from 'react'
 import SectionHeading from '../Cards/SectionHeading'
 import { projects } from '@/Data/projects'
 import ProjectImageCard from '../Cards/ProjectImageCard'
+import Link from 'next/link'
 
 const Projects = () => {
   return (
@@ -15,9 +16,9 @@ const Projects = () => {
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-3">
             {
                 projects?.map(({ id, title, text }) => (
-                    <div key={id} className="">
+                    <Link href={`projects/${id}`} key={id} className="" >
                         <ProjectImageCard border={'blue'} heading={title} text={text}/>
-                    </div>
+                    </Link>
                 ))
             }
         </div>

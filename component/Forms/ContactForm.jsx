@@ -9,7 +9,8 @@ const ContactForm = () => {
     email: '',
     phonenumber: '',
     name: '',
-    feedback: ''
+    message: '',
+    subject: ''
   })
 
   const handleChange = (e) => {
@@ -35,7 +36,8 @@ const ContactForm = () => {
       email: '',
       phonenumber: '',
       name: '',
-      feedback: ''
+      message: '',
+      subject: ''
     })
 
     console.log('input- ---', input)
@@ -44,46 +46,41 @@ const ContactForm = () => {
   return (
     <form onSubmit={handleSubmit}>
      
-      <div className="flex gap-4 flex-col  pb-2">
-
-        <div className="flex-1  ">
-          <p className="text-zinc-400">Name</p>
-          <div className="flex-1 bg-white w-full border rounded-full overflow-hidden py-4 text-zinc-400 px-4">
-            <input type="text" name="name" value={input.name} placeholder="Enter your full name" 
-            required
-            onChange={handleChange}
-            className="w-full text-black"/>
-          </div>
-        </div>
-        
-
-        <div className="flex-1 bg-white w-full relative border rounded-full overflow-hidden  flex gap-2 items-center text-zinc-400 px-4">
-              <div className="pr-2 py-4 border-r border-zinc-400 "><p className="text-xl"><AiOutlineMail/></p></div>
-              <input type="email" name="email" value={input.email} placeholder="Enter Email" 
-              required
-              onChange={handleChange}
-              className="w-full text-black"/>
-        </div>
-
-        
-          <div className="flex-1 bg-white w-full relative border rounded-full overflow-hidden  flex gap-2 items-center text-zinc-400">
-            <div className="pl-4 pr-2 py-4 border-r border-zinc-400 text-xl"><AiOutlinePhone/></div>
-            <input type="number" name="phonenumber" value={input.phonenumber} placeholder="Phonenumber"  required
-            onChange={handleChange}
-            className="text-black"/>
-          </div>            
-          
-          <div className="flex-1">
-            <p className="text-zinc-400">Feedback</p>
-            <div className="flex-1 h-40 bg-white w-full border rounded-ful overflow-hidden py-4 px-4">
-              <textarea type="text" name='feedback' value={input.feedback} placeholder="Enter your feedback" 
-              onChange={handleChange}
-              className="w-full h-full"/>
-            </div>
-          </div>
+      <div className="grid gap-2 ">
+        {
+          inputLabel?.map(({id, placeholder, label, key, required, type, textarea}) => { 
+            if (textarea === true ) {
+              return (
+                <div key={id}>
+                  <p className="pb-2">{label}</p>
+                  <div className="w-full border rounded-lg overflow-hidden py-2 px-6">
+                    <textarea type={type} name={key} value={input.key} placeholder={placeholder}
+                    required={required}
+                    onChange={handleChange}
+                    className="w-full h-24"/>
+                  </div>
+                </div> 
+            )
+            } else {
+              return (
+                <div key={id}>
+                  <p className="pb-2">{label}</p>
+                  <div className="w-full border rounded-full overflow-hidden py-2 px-6">
+                    <input type={type} name={key} value={input.key} placeholder={placeholder}
+                    required={required}
+                    onChange={handleChange}
+                    className="w-full"
+                    />
+                  </div>
+                </div> 
+            )
+            }
+            }
+          )
+        }
 
           <div>
-          <button type="submit" className="flex px-10 py-4 border-2 rounded-full border-blue-700 hover:bg-blue-700  hover:text-white cursor-pointer duration-300">
+          <button type="submit" className="flex px-10 py-4 border-2 rounded-full border-blue-400 hover:bg-blue-400  hover:text-white cursor-pointer duration-300">
             Submit
         </button>
         </div>
@@ -97,3 +94,52 @@ const ContactForm = () => {
 }
 
 export default ContactForm
+
+export const inputLabel = [
+  {
+    id: 0,
+    label: 'Name',
+    placeholder: 'Enter full name',
+    key: 'name', 
+    type: "text",
+    required: 'required',
+    style: ''
+  },
+  {
+    id: 1,
+    label: 'Email',
+    placeholder: 'Enter email',
+    key: 'email', 
+    type: "email",
+    required: 'required',
+    style: ''
+  },
+  {
+    id: 2,
+    label: 'Phone number',
+    placeholder: 'Enter phone number',
+    key: 'phonenumber', 
+    type: "number",
+    required: 'required',
+    style: ''
+  },
+  {
+    id: 3,
+    label: 'Subject',
+    placeholder: 'Enter subject',
+    key: 'subject', 
+    type: "text",
+    // required: 'required',
+    style: ''
+  },
+  {
+    id: 4,
+    label: 'Message',
+    placeholder: 'Enter message',
+    key: 'message', 
+    type: "text",
+    required: 'required',
+    style: '',
+    textarea: true
+  },
+]

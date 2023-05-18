@@ -1,13 +1,48 @@
 import {MdOutlinePhone, MdOutlineLocationOn, MdOutlineEmail} from "react-icons/md"
 
+export const officeHours = [
+    {
+        id: 0,
+        day: 'Monday',
+        time: '8am - 5pm',
+    },
+    {
+        id: 1,
+        day: 'Tuesday',
+        time: '8am - 5pm',
+    },
+    {
+        id: 2,
+        day: 'Wednesday',
+        time: '8am - 5pm',
+    },
+    {
+        id: 3,
+        day: 'Thursday',
+        time: '8am - 5pm',
+    },
+    {
+        id: 4,
+        day: 'Friday',
+        time: '8am - 5pm',
+    },
+    {
+        id: 5,
+        day: 'Saturday',
+        time: '10am - 2pm',
+    },
+]
+
+
 export const contact = [
     {
         id: 0,
         address: `Florasvej 13, 2nd Floor Left, 2600 Glostrup, Demark`,
-        branch: `Head Office`,
+        branch: `Denmark Office`,
         phone1: +4581869997,
         phone2: ``,
-        email: `info@cydamglobal.com`
+        email: `info@cydamglobal.com`,
+        // label: 'Denmark Address'
     },
     {
         id: 1,
@@ -15,7 +50,8 @@ export const contact = [
         branch: `Abuja Office`,
         phone1: +2349096717062,
         phone2: '',
-        email: ``
+        email: `info@cydamglobal.com`,
+        // label: 'Abuja Address'
     },
 ]
 
@@ -38,7 +74,7 @@ export const Contact = ({contactlist=contact }) => {
                     </div>
                    {email ? <div className="flex gap-2">
                         <p><MdOutlineEmail/></p>
-                        <p>{email}</p>
+                        <a href = {"mailto: " + email}>{email}</a> 
                     </div> : null}
                 </div>
             ))
