@@ -2,6 +2,7 @@ import Head from "@/component/Layout/Head"
 import PageHeroBanner from "@/component/Heading/PageHeroBanner"
 import Newsletter from "@/component/Sections/Newsletter"
 import Projects from "@/component/Sections/Projects"
+import CTAprojects from "@/component/Sections/CTAprojects"
 
 const Project = () => {
   return (
@@ -17,6 +18,8 @@ const Project = () => {
         </h2>
     </section>
     <Projects/>
+    <CTAprojects/>
+
     <Newsletter />
 
     </div>

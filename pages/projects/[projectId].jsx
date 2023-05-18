@@ -5,6 +5,8 @@ import { projects } from "@/Data/projects"
 import Image from "next/image"
 import Link from "next/link"
 import Newsletter from "@/component/Sections/Newsletter"
+import Projects from "@/component/Sections/Projects"
+import CTAprojects from "@/component/Sections/CTAprojects"
 
 const ProjectId = () => {
   const router = useRouter()
@@ -90,31 +92,15 @@ const ProjectId = () => {
 
     </section>
 
-    <section className="section-padding2 py-24 bg-blue-700 w-full text-center">
-        <h2 className="text-3xl font-bold pb-8 text-white">
-            Trust Us to handle your project with cutting-edge tech innovation
-        </h2>
-        <Link href={`/quote`} className="rounded-full text-white text-lg hover:scale-105 duration-300 border-white border py-4 px-10">
-          Get A Quote
-        </Link>
-    </section>
+    <CTAprojects/>
 
 
     <section className="section-padding2 pt-24">
-      <h3 className="text-3xl font-bold pb-6">
+      {/* <h3 className="text-3xl font-bold pb-6">
         Related Projects
-      </h3>
-      <div className="w-full flex flex-col sm:flex-row gap-4">
-      {
-        relatedProject?.map((item, i) => (
-          <div key={i} className="w-full h-80 lg:h-[400px] overflow-hidden">
-              <Image width={400} height={400} src={item} alt="project" 
-                className="w-full h-full object-cover"
-              />
-          </div>
-        ))
-      }
-      </div>
+      </h3> */}
+      <Projects/>
+
     </section>
       <Newsletter/>
     </div>

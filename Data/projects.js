@@ -65,7 +65,7 @@ export const projects = [
     {
         id: 2,
         img: `/housing/steel-hut-estate.png`,
-        imgList: [`/housing/steel-hut1`, `/housing/steel-building.png`, ],
+        imgList: [`/housing/steel-hut1.png`, `/housing/steel-building.png`, ],
         relatedProject: [`/housing/estate2.jpg`, `/housing/estate3.jpg`, `/housing/estate3.jpg`, ],
         title: `The Modern Villa `,
         text: `12 Modern Steel Hut`,
