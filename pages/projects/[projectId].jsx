@@ -11,16 +11,16 @@ const ProjectId = () => {
  
   const page =  projects?.filter(item => item.id === Number(router.query.projectId)) 
 
-  const {id, img, imgList, relatedProject, partners, clients, details, heading, text, title, projectType} = page
+  const x = projects[router.query.projectId]
 
-  console.log(page)
+  const {id, img, imgList, relatedProject, partners, clients, details, heading,  projectType} = x
+
+  // console.log(page)
 
   const tags = [{title: 'Project Type', type: projectType}, {title: 'Clients', type: clients}, {title: 'Partners', type: partners}]
 
   console.log(projects[router.query.projectId], router.query.projectId, 'projectlist', projects, 'page--', page)
 
-  
-  
   return (
     <>
     <Head title="Cydam - Project"/>
@@ -35,7 +35,7 @@ const ProjectId = () => {
         <div className="flex flex-col sm:flex-row w-full gap-4">
           {
             tags?.map(({type, title}) => (
-              <div className="py-8 w-full text-center border border-black rounded-lg">
+              <div key={title} className="py-8 w-full text-center border border-black rounded-lg">
                 <h4 className="text-xl font-bold">{title}</h4>
                 <p>{type}</p>
               </div>
@@ -81,10 +81,10 @@ const ProjectId = () => {
     </section>
 
     <section className="section-padding2 py-14 w-full flex justify-between">
-      <Link href={`/projects/${id !== 0 ? projects.length - 1 : id-1}`} className="rounded-full py-4 px-6 text-bold hover-scale-blue border border-blue-700">
+      <Link href={`/projects/${id === 0 ? projects.length - 1 : id-1}`} className="rounded-full py-4 px-6 text-bold hover-scale-blue border border-blue-700">
         Previous
       </Link >
-      <Link href={`/projects/${id !== projects.length - 1 ? 0 : id+1}`} className="rounded-full py-4 px-10 text-bold hover-scale-blue border border-blue-700">
+      <Link href={`/projects/${id === projects.length - 1 ? 0 : id+1}`} className="rounded-full py-4 px-10 text-bold hover-scale-blue border border-blue-700">
         Next
       </Link >
 
@@ -101,7 +101,7 @@ const ProjectId = () => {
 
 
     <section className="section-padding2 pt-24">
-      <h3 className="text-3xl font-bold pv-10">
+      <h3 className="text-3xl font-bold pb-6">
         Related Projects
       </h3>
       <div className="w-full flex flex-col sm:flex-row gap-4">
