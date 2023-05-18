@@ -19,7 +19,7 @@ const ProjectId = () => {
 
   const tags = [{title: 'Project Type', type: projectType}, {title: 'Clients', type: clients}, {title: 'Partners', type: partners}]
 
-  console.log(projects[router.query.projectId], router.query.projectId, 'projectlist', projects, 'page--', page)
+  // console.log(projects[router.query.projectId], router.query.projectId, 'projectlist', projects, 'page--', page)
 
   return (
     <>
