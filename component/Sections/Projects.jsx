@@ -16,7 +16,7 @@ const Projects = () => {
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-3 w-full">
             {
                 projects?.map(({ id, title, text, img }) => (
-                    <Link href={`projects/${id}`} key={id} className="w-full" >
+                    <Link href={`/projects/${id}`} key={id} className="w-full" >
                         <ProjectImageCard img={img} border={'blue'} heading={title} text={text}/>
                     </Link>
                 ))
