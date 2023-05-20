@@ -4,6 +4,7 @@ import Head from "@/component/Layout/Head"
 import ContactSection from "@/component/Sections/ContactSection"
 import Newsletter from "@/component/Sections/Newsletter"
 import ContactDetails from "@/component/Sections/ContactDetails"
+import ContactForm from "@/component/Forms/ContactForm"
 
 const contact = () => {
   return (
@@ -12,7 +13,7 @@ const contact = () => {
       <PageHeroBanner heading='Contact Us' img="/housing/estate2.jpg" page={`Home > Services > Contact`}/>
 
       <div>
-       <ContactSection/>
+       <ContactSection component={<ContactForm/>} heading='Send Us A Message' img='/housing/house3.jpg'/>
        <ContactDetails/>
        <GoogleMap/>
     </div>

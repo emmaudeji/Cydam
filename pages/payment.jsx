@@ -3,11 +3,11 @@ import PageConstruction from "@/component/PageConstruction"
 import Head from "@/component/Layout/Head"
 import Newsletter from "@/component/Sections/Newsletter"
 
-const Blog = () => {
+const Payment = () => {
   return (
     <>
     <Head/>
-      <PageHeroBanner heading='Our Blog' img="/housing/estate2.jpg" page={`Home > Blog`}/>
+      <PageHeroBanner heading='Easy Payment' img="/housing/estate2.jpg" page={`Home >  Payment`}/>
 
       <div>
         <PageConstruction/>
@@ -18,4 +18,4 @@ const Blog = () => {
   )
 }
 
-export default Blog
+export default Payment

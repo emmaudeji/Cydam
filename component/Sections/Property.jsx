@@ -1,6 +1,7 @@
 import { propertyList } from '@/Data/propertyList'
 import PropertyImageCard from '../Cards/PropertyImageCard'
 import SectionHeading from '../Cards/SectionHeading'
+import Link from 'next/link'
 
 const Property = () => {
   return (
@@ -13,10 +14,10 @@ const Property = () => {
 
         <div className="grid gap-x-10 gap-y-28 sm:grid-cols-2 lg:grid-cols-3">
             {
-                propertyList?.map(({ id, img, location, price, bathroom, rooms, garage, }) => (
-                    <div key={id} className="">
-                        <PropertyImageCard img={img} location={location} price={price} bathroom={bathroom} bedroom={rooms} garage={garage}/>
-                    </div>
+                propertyList?.map(({ id, img, location, propertyType, price, bathrooms, bedrooms, }) => (
+                    <Link href={`/properties/${id}`} key={id} className="">
+                        <PropertyImageCard img={img} location={location} price={price} bathroom={bathrooms} bedroom={bedrooms} propertyType={propertyType} />
+                    </Link >
                 ))
             }
         </div>

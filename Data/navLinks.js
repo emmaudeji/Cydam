@@ -46,6 +46,12 @@ export const navLinks = [
         subMenu: services
     },
     {
+        id: 5,
+        title: `Properties`,
+        link: `/properties`
+    },
+   
+    {
         id: 2,
         title: `Projects`,
         link: `/projects`
