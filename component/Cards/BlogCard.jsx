@@ -1,5 +1,5 @@
 import Link from "next/link"
-const BlogCard = ({text, img, title, highlight, link}) => {
+const BlogCard = ({ img, title, highlight, id}) => {
     return (
       <div className={"w-full flex gap-4 items-center "}>
         <div>
@@ -11,7 +11,7 @@ const BlogCard = ({text, img, title, highlight, link}) => {
           <div className="grid gap-1">
               <h1 className="text-xl font-semibold">{title}</h1>
               <p className="">{highlight}</p>
-              <Link href={link} className="text-blue-700 text-sm font-semibold">Read Post</Link>
+              <Link href={`/blog/${id}`} className="text-blue-700 text-sm font-semibold">Read Post</Link>
           </div>
       </div>
     )

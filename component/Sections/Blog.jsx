@@ -19,7 +19,7 @@ const Blog = () => {
                         blog?.map(({id, title,author, comment,  highlight, date, img, })=>(
                             <div key={id}>
                                 <div className='w-[330px] h-full'>
-                                   <BlogImageCard title={title} img={img} highlight={highlight} author={author} date={date} comment={comment}/>
+                                   <BlogImageCard id={id} title={title} img={img} highlight={highlight} author={author} date={date} comment={comment?.length}/>
                                 </div>
                             </div>
                         ))

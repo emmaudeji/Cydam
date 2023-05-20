@@ -16,7 +16,6 @@ const SearchBar = () => {
         name="searchbar" 
         id="searchbar" 
         placeholder='Enter search'/>
-
       </div>
   )
 }

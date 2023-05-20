@@ -9,10 +9,16 @@ import {
 const Context = createContext();
 
 const StateContext = ({ children }) => {
-  const [devotional, setDevotional] = useState("emma bros");
+  const [blogData, setBlogData] = useState([])
+
+  const addBlogComment = (comment) => {
+    comment.comment && comment.user && blogData[0].comment.push(comment)
+    setBlogData(blogData)
+    console.log('cotext', blogData)
+  }
 
   return (
-    <Context.Provider value={{ devotional }}>{children}</Context.Provider>
+    <Context.Provider value={{blogData, setBlogData, addBlogComment  }}>{children}</Context.Provider>
   );
 };
 

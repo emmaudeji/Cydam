@@ -53,16 +53,16 @@ const Footer = () => {
               {
                 blog.slice(0,3).map(({id, img, link, title, highlight})=> (
                   <div key={id} className="">
-                    <BlogCard img={img} link={link} title={title} highlight={highlight}/>
+                    <BlogCard img={img} id={id} link={link} title={title} highlight={highlight}/>
                   </div>
                 ))
               }
               </div>
           </div>
       </div>
-      <div className="section-padding2 pt-4 pb-8 flex justify-center border-t border-blue-200 text-sm">
+      <div className="section-padding2 pt-4 pb-8 flex justify-center border-t border-blue-200 text-[8px] text-center">
         <div>
-          <p>Cydam Global Copyright (c) {new Date().getFullYear()}. All Rights Reserved</p>
+          <p>Cydam Global Copyright, {new Date().getFullYear()}. All Rights Reserved</p>
         </div>
       </div>
     </div>
