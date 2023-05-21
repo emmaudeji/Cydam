@@ -2,7 +2,7 @@ import React from 'react'
 
 const PageHeroBanner = ({heading, img, page}) => {
   return (
-    <div className=' h-[40vh]  relative top-[12vh]'>
+    <div className=' h-[350px]  relative top-24'>
       
     {/* background image */}
     <div className='w-full h-full overflow-hidden'>

@@ -31,11 +31,11 @@ a {
 }
 
 .section-padding {
-  @apply w-full px-6 sm:px-16 lg:px-36 py-40;
+  @apply w-full px-6 sm:px-16 lg:px-20 xl:px-36 py-40;
 }
 
 .section-padding2 {
-  @apply w-full px-6 sm:px-16 lg:px-36;
+  @apply w-full px-6 sm:px-16 lg:px-20 xl:px-36;
 }
 
 .section-container {

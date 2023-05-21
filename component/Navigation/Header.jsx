@@ -18,8 +18,8 @@ const Header = ({pageheading}) => {
   
 
   return (
-    <div className="fixed z-50  h-[12vh] w-full bg-primary ">
-      <div className="flex items-center section-padding2 shadow h-[12vh] justify-between">
+    <div className="fixed z-50  h-24 w-full bg-primary ">
+      <div className="flex items-center section-padding2 shadow h-24 justify-between">
 
         <Link href={`/`} className=" text-xl font-bold mr-4">Cydam Global</Link>
 

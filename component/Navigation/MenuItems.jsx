@@ -10,14 +10,14 @@ const MenuItems = ({menu, active, setActive, mobile, setShowMobileNav}) => {
    
   return (
     
-    <li key={menu.id} onClick={() => setActive(menu.title)}
+    <div onClick={() => setActive(menu.title)}
     className={mobile ? `w-full h-full shadow` : `h-full relative`} >
         <div  className={mobile ? '' : 'h-full' } onClick={() => setDropdown((prev) => !prev)}>
         {
             menu.subMenu ? (
                 <>
                     <button type="button"  
-                        className=' h-full p-6 hover:text-blue-700 duration-300  flex items-center gap-4 w-full'
+                        className=' h-full p-4 xl:p-6 hover:text-blue-700 duration-300  flex items-center gap-4 w-full'
                         >
                             <div>{menu.title}</div>
                             {!dropdown ? <MdArrowDropDown/> : <MdArrowDropUp/>}
@@ -26,7 +26,7 @@ const MenuItems = ({menu, active, setActive, mobile, setShowMobileNav}) => {
                 </>
                
             ) : (
-                <Link href={menu.link} className= {`h-full p-6 hover:text-blue-700 duration-300 flex items-center ${active===menu.title ? `text-secondary ` : `` } `}
+                <Link href={menu.link} className= {`h-full p-4 xl:p-6 hover:text-blue-700 duration-300 flex items-center ${active===menu.title ? `text-secondary ` : `` } `}
                 >
                    <p onClick={mobile ? () => setShowMobileNav(false) : null}> {menu.title}</p>
                 </Link>
@@ -34,7 +34,7 @@ const MenuItems = ({menu, active, setActive, mobile, setShowMobileNav}) => {
             )
         }
         </div>
-    </li>
+    </div>
   )
 }
 

@@ -6,16 +6,17 @@ const DesktopNavbar = ({active, setActive, }) => {
 
   return (
     
-        <ul className="flex w-full items-center justify-between gap-14">
+        <ul className="flex w-full items-center justify-between ">
 
             {
-                navLinks?.map(item => (
-                    <MenuItems menu={item} active={active} setActive={setActive}/> 
+                navLinks?.map((item, i) => (
+                    <li key={i}>
+                        <MenuItems menu={item} active={active} setActive={setActive}/> 
+                    </li>
                 ))
             }
-            </ul>
-   
-    
+        </ul>
+       
   )
 }
 

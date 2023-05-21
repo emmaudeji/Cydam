@@ -91,7 +91,7 @@ const BlogId = ({data, id}) => {
                                     </div>
                                 </div>
 
-                                <div className="w-full h-[300px] sm:h-[500px] overflow-hidden">
+                                <div className="w-full h-[300px] sm:h-[450px] overflow-hidden">
                                     <Image width={500} height={500} src={img} alt={author} className="image-style"/>
                                 </div>
 

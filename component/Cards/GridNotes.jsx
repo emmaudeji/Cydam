@@ -3,9 +3,9 @@ import React from 'react'
 const GridNotes = ({note1, note2, note3, img1, img2}) => {
   return (
 
-    <div className="h-full w-full text-white grid sm:grid-cols-2 sm:gap-4 text-2xl xl:text-3xl font-bold ">
+    <div className="h-full w-full text-white grid sm:grid-cols-2 sm:gap-4 text-2xl  font-semibold ">
                    
-                    <div className="bg-blue-700  h-52 sm:min-h-[250px]  flex px-6 items-center   sm:text-right sm:rounded-[50px] sm:rounded-br-none">
+                    <div className="bg-blue-700  h-52 sm:min-h-full  flex px-6 items-center   sm:text-right sm:rounded-[50px] sm:rounded-br-none">
                             {note1}
                         </div>
                    
@@ -25,7 +25,7 @@ const GridNotes = ({note1, note2, note3, img1, img2}) => {
                         </div>
                  
                   
-                        <div className="bg-blue-700 h-52 sm:min-h-[250px] flex px-6 items-center sm:rounded-[50px] sm:rounded-tl-none">
+                        <div className="bg-blue-700 h-52 sm:min-h-full flex px-6 items-center sm:rounded-[50px] sm:rounded-tl-none">
                             {note3}
                         </div>
                  
