@@ -41,16 +41,16 @@ export const contact = [
         branch: `Denmark Office`,
         phone1: +4581869997,
         phone2: ``,
-        email: `info@cydamglobal.com`,
+        email: `info@cydamgroup.org`,
         // label: 'Denmark Address'
     },
     {
         id: 1,
         address: `16 Nkwere Crescent Area 11 Garki Abuja, Nigeria`,
         branch: `Abuja Office`,
-        phone1: +2349096717062,
-        phone2: '',
-        email: `info@cydamglobal.com`,
+        phone1: +2349019370870,
+        phone2: +2349096717062,
+        email: `info@cydamgroup.org`,
         // label: 'Abuja Address'
     },
 ]

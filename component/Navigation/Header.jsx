@@ -8,6 +8,7 @@ import { AiOutlineMenu, AiOutlineClose, AiOutlineSearch } from "react-icons/ai";
 
 
 import Searchbox from "./Searchbox";
+import Image from "next/image";
 // import Cydam from "@/public/svg/Cydam";
 
 const Header = ({pageheading}) => {
@@ -21,7 +22,9 @@ const Header = ({pageheading}) => {
     <div className="fixed z-50  h-24 w-full bg-primary ">
       <div className="flex items-center section-padding2 shadow h-24 justify-between">
 
-        <Link href={`/`} className=" text-xl font-bold mr-4">Cydam Global</Link>
+        <Link href={`/`} className=" text-xl font-bold mr-4"> 
+          <Image width={100} height={100}  src={'/svg/cydam.png'} alt="cydam-logo"  />
+        </Link>
 
         <div className="hidden md:flex h-full">
           <DesktopNavbar active={active} setActive={setActive}  />
