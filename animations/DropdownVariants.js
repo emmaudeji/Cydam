@@ -1,6 +1,6 @@
 export const dropdownVariants = {
   hidden: {
-    y: "-50vh",
+    y: "-50%",
     opacity: 0,
   },
   visible: {
@@ -11,7 +11,7 @@ export const dropdownVariants = {
     },
   },
   exit: {
-    y: "-100vh",
+    y: "-100%",
     opacity: 0,
     transition: {
       ease: "easeOut",

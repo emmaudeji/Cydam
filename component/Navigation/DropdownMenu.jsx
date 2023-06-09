@@ -3,7 +3,7 @@ import Link from "next/link"
 const DropdownMenu = ({submenus, active, setActive, mobile, setShowMobileNav}) => {
   
   return (
-    <ul className={`${ mobile ? 'w-full' : 'absolute top-[12vh] left-[-30%] w-80 shadow-2xl'}   bg-primary ` }>
+    <>
       {submenus.map(({title, link, id}) => (
         <li key={id} className={id === submenus.length-1 ? `` : ` border-b border-black`}
           onClick={() => setActive(id)}
@@ -16,7 +16,7 @@ const DropdownMenu = ({submenus, active, setActive, mobile, setShowMobileNav}) =
         
         </li>
       ))}
-    </ul>
+    </>
   )
 }
 

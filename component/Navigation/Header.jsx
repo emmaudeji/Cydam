@@ -30,18 +30,18 @@ const Header = ({pageheading}) => {
           <DesktopNavbar active={active} setActive={setActive}  />
         </div>
 
-        {/* <div className="flex gap-3 cursor-pointer text-xl sm:text-2xl">
-          <div className="duration-300 hover:scale-110"
+        <div className="flex gap-3 cursor-pointer text-xl sm:text-2xl">
+          {/* <div className="duration-300 hover:scale-110"
           onClick={() => setShowSearchBox(prev => !prev)}>
             <AiOutlineSearch/>
-          </div>
+          </div> */}
           <div className="flex md:hidden duration-300 hover:scale-110 " onClick={() => setShowMobileNav(!showMobileNav)}>
             {showMobileNav ? <AiOutlineClose/> : <AiOutlineMenu/>}
           </div>  
-        </div> */}
+        </div>
       </div>
 
-      <div className="flex md:hidden absolute top-[12vh] right-0"
+      <div className="flex md:hidden absolute top-24 right-0"
       >
           <MobileNavbar active={active} setActive={setActive} showMobileNav={showMobileNav} setShowMobileNav={setShowMobileNav}/>
         </div>

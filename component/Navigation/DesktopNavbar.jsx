@@ -6,7 +6,7 @@ const DesktopNavbar = ({active, setActive, }) => {
 
   return (
     
-        <ul className="flex w-full items-center justify-between ">
+        <ul className="flex w-full items-center justify-between bg-primary">
 
             {
                 navLinks?.map((item, i) => (
