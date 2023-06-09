@@ -91,7 +91,7 @@ const ProjectId = ({data}) => {
   
       </section>
   
-      <CTAprojects/>
+      <CTAprojects btnTxt="Get quote" heading="We help you reduce project cost with our innovative approach to construction and project design" link="/quote"/>
       </div>
 
     )
@@ -117,10 +117,10 @@ export default ProjectId
 
 export const getServerSideProps  = async ({params}) => {
   const id = Number(params.projectId)
-  console.log(id)
+  console.log('id', id)
   const data = await projects?.filter(items => items.id === id)
 
-console.log(data)
+console.log("dddddd", data)
   return {
     props: {
       data: data

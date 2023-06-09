@@ -28,7 +28,7 @@ export default function Home() {
       <WideSection 
         heading='We Offer The Most Complete Urban Development Services.'
         text={`Our goal is to help our clients create vibrant, livable, and sustainable urban environments. With our complete urban development services, we can help you achieve your vision for your community.`}
-        img='/housing/estate3.jpg'
+        img='/housing/steel-hut-estate.png'
         btnText='Contact Us' btnLink='/contact'
       />
       <Projects/>

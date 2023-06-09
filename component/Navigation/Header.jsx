@@ -23,14 +23,14 @@ const Header = ({pageheading}) => {
       <div className="flex items-center section-padding2 shadow h-24 justify-between">
 
         <Link href={`/`} className=" text-xl font-bold mr-4"> 
-          <Image width={100} height={100}  src={'/svg/cydam.png'} alt="cydam-logo"  />
+          <Image width={100} height={100}  src={'/svg/cydamgroup.png'} alt="cydam-logo"  />
         </Link>
 
         <div className="hidden md:flex h-full">
           <DesktopNavbar active={active} setActive={setActive}  />
         </div>
 
-        <div className="flex gap-3 cursor-pointer text-xl sm:text-2xl">
+        {/* <div className="flex gap-3 cursor-pointer text-xl sm:text-2xl">
           <div className="duration-300 hover:scale-110"
           onClick={() => setShowSearchBox(prev => !prev)}>
             <AiOutlineSearch/>
@@ -38,7 +38,7 @@ const Header = ({pageheading}) => {
           <div className="flex md:hidden duration-300 hover:scale-110 " onClick={() => setShowMobileNav(!showMobileNav)}>
             {showMobileNav ? <AiOutlineClose/> : <AiOutlineMenu/>}
           </div>  
-        </div>
+        </div> */}
       </div>
 
       <div className="flex md:hidden absolute top-[12vh] right-0"

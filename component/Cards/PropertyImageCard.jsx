@@ -7,9 +7,10 @@ import Image from 'next/image';
 const PropertyImageCard = ({img,  team, location, price, bathroom, bedroom, propertyType}) => {
   return (
     <div className='w-full h-[400px] relative z-10'>
-        <div className="rounded-[60px] w-[95%] h-[80%] rounded-tl-none overflow-hidden">
+        <div className="relative rounded-[60px] w-[95%] h-[80%] rounded-tl-none overflow-hidden">
             <Image width={300} height={290} src={img} alt="home"  placeholder="blur" blurDataURL='/favicon.ico'
             className='image-style'/>
+            <button className="w-24 p-3 bg-blue-700 absolute bottom-0 right-0 text-white text-center rounded-l-full ">View</button>
         </div>
 
         <div className={`h-[80%] w-[95%]  absolute bottom-0 right-0 -z-10 rounded-[60px] rounded-br-none border-4   border-blue-400 duration-300 `}>
@@ -44,6 +45,7 @@ const PropertyImageCard = ({img,  team, location, price, bathroom, bedroom, prop
                 )
                 
             }
+            
         </div>
 </div>
   )

@@ -7,7 +7,7 @@ export const herobannerLinks = [
         btnText1: `Find Properties`,
         btnLink2: ``,
         btnText2: ``,
-        img: `/housing/house1.jpg`
+        img: `/housing/steel-hut1.png`
     },
     // {
     //     id: 1,
