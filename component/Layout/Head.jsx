@@ -17,7 +17,7 @@ const HeadComponent = ({
         <meta name="description" content={description} />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
-        <meta property="og:image" content={titleImage} />
+        <meta property="og:image" content={'https://www.cydamgroup.org/_next/image?url=%2Fhousing%2Fsteel-hut1.png&w=640&q=75'} />
         {/* <Script src="https://js.paystack.co/v1/inline.js"/> */}
       </Head>
   )
