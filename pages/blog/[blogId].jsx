@@ -15,7 +15,7 @@ import Blog from "@/component/Sections/Blog"
 import CommentForm from "@/component/Forms/CommentForm"
 import { scrollToElement } from "@/utils/scrollToElement"
 import { useStateContext } from "@/contextHook/StateContext"
-
+import ReactMarkdown from 'react-markdown';
 
 
 
@@ -104,11 +104,13 @@ const BlogId = ({data, id}) => {
                                 </div>
 
                                 <div className="grid gap-8 px-4 sm:px-10">
-                                    {
+                                    {/* {
                                         content?.map((item, i) => (
                                             <p key={i}>{item}</p>
                                         ))
-                                    }
+                                    } */}
+                                          <ReactMarkdown>{content.join('\n\n')}</ReactMarkdown>
+
                                 </div>
                             </div>
                         )
