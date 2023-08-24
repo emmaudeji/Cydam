@@ -1,13 +1,172 @@
-export const blogCategory = [ `Real Estate`, `Building Construction`, `Project Management`, `Waste Management`, `Energy`, 
+export const blogCategory = [ `Real Estate`, `Building Construction`, `Project Management`, `Waste Management`, `Energy`, `News`, 'Urban Development', 
 ]
 
 
 
 
 export const blog = [
+  {
+    id: 17,
+    img: `/news/tinapa2.jpg`, // Replace with the actual image path
+    title: "Empowering Potential: CYDAM GROUP's Visit to Tinapa Gas Power Plant Signals New Avenues of Growth",
+    date: '08/24/2023',
+    author: 'Emma Udeji',
+    tags: ['gas power plant', 'partnership', 'economic growth'],
+    category: 'Energy',
+    keywords: ['Tinapa Gas Power Plant', 'sustainable energy', 'partnership', 'CYDAM GROUP'],
+    highlight: 'Uncover a future of prosperity as CYDAM GROUP explores collaborations to rejuvenate the Tinapa Gas Power Plant.',
+    content: [
+      `A transformative exploration unfolded as CYDAM GROUP OF COMPANIES embarked on a significant visit to the Tinapa Gas Power Plant in Cross River State. This endeavor not only reflects CYDAM's commitment to sustainable energy solutions but also unveils a vision of partnership and economic growth.`,
+      `Located at the heart of Cross River State's economic landscape, the Tinapa Gas Power Plant possesses untapped potential that aligns perfectly with CYDAM GROUP's mission. The visit signifies more than just a physical tour; it is a precursor to a future where collaborative efforts breathe new life into vital infrastructure.`,
+      `"Our aspirations extend beyond boundaries, and the Tinapa Gas Power Plant represents an opportunity to harness resources for shared progress," stated [Your Name], a visionary leader at CYDAM GROUP OF COMPANIES. "Through strategic partnerships, we aim to revitalize this power plant and contribute to the state's economic well-being."`,
+      `The intent to forge partnerships and make the Tinapa Gas Power Plant operational carries profound implications. For the state, it promises a source of sustainable energy, revenue generation, and enhanced economic activity. For CYDAM GROUP, it aligns with their core values of responsible development and community empowerment.`,
+      `As the visit unfolded, the potential for this collaborative endeavor became increasingly evident. The Tinapa Gas Power Plant, with its existing infrastructure and strategic significance, holds the key to a future where energy meets economic advancement.`,
+      `The upcoming collaboration to revitalize the Tinapa Gas Power Plant signifies a harmonious convergence of purpose — state, private sector, and community progress intertwined. With every step forward, CYDAM GROUP's commitment to driving positive change finds expression in projects that transcend individual interests.`,
+      `Stay tuned as we embark on this journey towards a vibrant energy future and a flourishing state economy.`,
+    ],
+    comment: [
+      // You can add comments here if desired
+    ]
+  }
+,  
+
+  {
+    id: 16,
+    img: `/news/office.jpg`, // Replace with the actual image path
+    title: "Unveiling Visions: CYDAM GROUP Explores Future Prospects at Proposed Office Complex in Calabar",
+    date: '08/24/2023',
+    author: 'Emma Udeji',
+    tags: ['office complex', 'urban development', 'community engagement'],
+    category: 'News',
+    keywords: ['proposed office complex', 'community enhancement', 'CYDAM GROUP', 'future prospects'],
+    highlight: 'Discover the future unfolding as CYDAM GROUP envisions a hub of innovation and progress in Calabar.',
+    content: [
+      `A vista of possibilities and progress opened up as CYDAM GROUP OF COMPANIES embarked on a momentous visit to the proposed site for their upcoming office complex in the vibrant city of Calabar, Cross River State. The visit, laden with promise, marks the initiation of a venture that envisions more than just infrastructure — it embodies a commitment to community enhancement and sustainable growth.`,
+      `Nestled within the heart of Calabar, the proposed office complex stands as a testament to CYDAM GROUP's ambition to create a hub of innovation and collaboration. It is more than just a physical space; it is a beacon of progress that reflects CYDAM's dedication to fostering positive change and economic prosperity.`,
+      `"Our vision for the office complex surpasses traditional boundaries. It symbolizes our belief in the power of spaces to inspire creativity and synergy," shared [Your Name], a visionary leader at CYDAM GROUP OF COMPANIES. "Through this project, we aim to provide a platform for collective growth and community engagement."`,
+      `The proposed office complex carries implications that extend beyond CYDAM GROUP and the corporate landscape. For the community, it holds the promise of employment opportunities, knowledge exchange, and an avenue for collaboration. For CYDAM GROUP, it represents the embodiment of their commitment to driving progress and creating lasting value.`,
+      `As the visit unfolded, the excitement was palpable. The site, with its strategic location and potential, set the stage for a future where innovation and development converge. The proposed office complex echoes the aspirations of a city on the rise, embodying a shared vision for urban progress.`,
+      `The forthcoming office complex becomes more than just a structure; it becomes a catalyst for a thriving community. As plans take shape, CYDAM GROUP's promise of progress will manifest through each brick laid, forging a legacy of positive impact.`,
+      `Stay tuned as we embark on this transformative journey towards a brighter and more empowered future.`,
+    ],
+    comment: [
+      // You can add comments here if desired
+    ]
+  }
+,  
+  {
+    id: 15,
+    img: `/news/tp-land2.jpg`, // Replace with the actual image path
+    title: "Pioneering Progress: CYDAM GROUP Explores New Horizons with Inter City and Intra City Transport and Logistics Project",
+    date: '08/24/2023',
+    author: 'Emma Udeji',
+    tags: ['transportation', 'logistics', 'community development'],
+    category: 'News',
+    keywords: ['transportation project', 'community benefit', 'sustainable progress', 'CYDAM GROUP'],
+    highlight: 'Embark on a journey of enhanced connectivity and prosperity with CYDAM GROUP\'s Transport and Logistics Project.',
+    content: [
+      `In a stride towards fostering connectivity, economic growth, and community well-being, CYDAM GROUP OF COMPANIES embarked on a pivotal visit to the new site earmarked for the Inter City and Intra City Transport and Logistics Company Project. The venture underscores CYDAM's commitment to facilitating seamless movement, a driving force behind societal progress.`,
+      `Set against the backdrop of potential and innovation, the Inter City and Intra City Transport and Logistics Project holds promise as a catalyst for change. This visionary endeavor seeks to bridge not only geographical gaps but also socio-economic disparities, bringing communities closer while enhancing their access to opportunities.`,
+      `"Our vision extends beyond infrastructure; it centers on uplifting lives and creating a network that propels both urban and rural areas towards growth," emphasized [Your Name], a visionary leader at CYDAM GROUP OF COMPANIES. "This project symbolizes our dedication to fostering community advancement and sustainable development."`,
+      `The project's benefits extend far and wide. For the community, it promises enhanced mobility, reduced travel time, and improved access to essential services. For the government, it aligns with their vision of inclusive development and efficient transportation networks. For CYDAM GROUP, it exemplifies the alignment of business success with societal progress.`,
+      `As the site visit unfolded, the vision took on tangible form. The potential for a transformed urban landscape and improved inter-city connections became evident, igniting a sense of optimism among all stakeholders involved. The project represents a shared journey towards progress, wherein government support, private sector innovation, and community well-being converge.`,
+      `The Inter City and Intra City Transport and Logistics Project embodies the essence of unity and progress. As plans evolve, the project will not only redefine transportation but also contribute to broader socio-economic growth. CYDAM GROUP's role as a change agent in this endeavor stands as a testament to their commitment to creating a better future.`,
+      `As the project gains momentum, the promise of enhanced connectivity and accessibility inches closer to realization. This journey towards improved lives and empowered communities echoes the ethos that drives CYDAM GROUP's contributions to society.`,
+      `Stay tuned for further updates and insights on this transformative project.`,
+    ],
+    comment: [
+      { user: 'John', comment: 'This project has the potential to transform how we move and connect. Exciting times ahead for our community!', date: '09/06/2023' },
+      { user: 'Sandra', comment: 'Enhanced transportation is a key pillar of progress. Kudos to CYDAM GROUP for taking this initiative.', date: '09/07/2023' },
+      { user: 'David', comment: `I'm impressed by the scope of this project. It's a testament to the positive impact the private sector can bring to society.`, date: '09/08/2023' }
+    ],
+  }
+,  
+  {
+    id: 14,
+    img: `/news/signing2.jpg`,
+    title: "Advancing Together: CYDAM GROUP and Cross River State Government Sign Key Partnership Documents",
+    date: '08/24/2023',
+    author: 'Emma Udeji',
+    tags: ['partnership', 'community development', 'sustainable projects'],
+    category: 'News',
+    keywords: ['partnership documents', 'community projects', 'sustainable development', 'CYDAM GROUP'],
+    highlight: 'Witness the beginning of transformative projects in partnership with Cross River State Government.',
+    content: [
+      `In a significant step towards fostering progress and elevating community well-being, CYDAM GROUP OF COMPANIES and the Cross River State Government came together today to formalize their partnership. The signing ceremony, held at the state's Policy Making Office, marks a pivotal moment in the pursuit of collaborative initiatives aimed at propelling the region's development forward.`,
+      `During the ceremony, three vital documents were signed, each representing a distinct proposed project that underlines the shared commitment of CYDAM GROUP and the government to creating a positive impact in diverse spheres.`,
+      `**1. Municipal Waste Management and Waste to Energy Project**`,
+      `This project embodies the essence of sustainable development. By combining effective waste management with innovative waste-to-energy solutions, CYDAM GROUP and the Cross River State Government are poised to tackle environmental concerns while generating clean energy.`,
+      `**2. The Intra State and Inter State Transport and Logistics Private Company Projects**`,
+      `Efficient transport and logistics are pivotal for economic growth. Through this venture, CYDAM GROUP and the government aim to enhance connectivity and accessibility, opening doors for trade and regional development.`,
+      `**3. The Municipal Water Supply Project**`,
+      `Access to clean water is a fundamental right. This project envisions the provision of reliable and safe municipal water supply, ensuring the well-being of communities and promoting a healthier, more prosperous future.`,
+      `"Today's signing marks the beginning of our joint journey towards progress," shared [Your Name], a driving force behind CYDAM GROUP OF COMPANIES. "These projects symbolize our shared vision for a better tomorrow and underscore our commitment to transformative development."`,
+      `With the signing of these documents, CYDAM GROUP and the Cross River State Government have set the stage for collaborative action that promises to reshape the region's landscape. The partnership represents a fusion of expertise, resources, and unwavering dedication to the well-being of the community.`,
+      `As the projects move forward from the drawing board to reality, the shared efforts of CYDAM GROUP and the government are expected to pave the way for sustainable progress, economic growth, and an elevated quality of life for all residents.`,
+      `For inquiries and more information, please contact us.`
+    ],
+    comment: [
+      { user: 'John', comment: `It's heartening to see private and public sectors uniting for the betterment of the community. Kudos!`, date: '09/01/2023' },
+      { user: 'Alice', comment: 'These projects represent a positive transformation for the region. Looking forward to the impact!', date: '09/02/2023' },
+      { user: 'David', comment: 'The signing ceremony is a symbol of hope and progress. The projects hold immense potential for the future.' },
+    ],
+  },  
+
+  {
+    id: 13,
+    imglist: [`/news/ayade3.jpg`, `/news/ayade_power_plant3.jpg`,`/news/ayade_power_plant4.jpg`,`/news/ayade_power_plant5.jpg`, ],
+    img: `/news/ayade3.jpg`,
+    title: "CYDAM GROUP's Transformative Initiative: Collaborating with Cross River State Government to Propel Community Development",
+    date: '08/28/2023',
+    author: 'Emma Udeji',
+    tags: ['community development', 'partnership', 'sustainable growth'],
+    category: 'Urban Development',
+    keywords: ['AYADE POWER PLANT', 'community well-being', 'sustainable progress', 'CYDAM GROUP'],
+    highlight: 'See our passion towards community development and shared prosperity in Cross River State.',
+    content: [
+      `Revitalizing Potential: CYDAM's Vision for a Flourishing Partnership with Cross River State Government.`,
+      `Calabar, Cross River State, Nigeria — In a pioneering move towards enriching community life and fostering progress, CYDAM GROUP OF COMPANIES is taking strides towards a visionary partnership with the Cross River State Government. The proposed collaboration envisions the enhancement of social amenities and utilities, propelling both urban and rural areas towards a brighter future, in harmony with the state's ongoing development efforts.`,
+      `Situated within the picturesque landscape of Calabar, the state capital, lies a potential catalyst for change - the AYADE POWER PLANT. CYDAM GROUP's aspirational initiative seeks to engage in a strategic partnership that would harness the untapped potential of this venture. Through this initiative, CYDAM GROUP aims to bolster the well-being of local communities, promote sustainable growth, and forge a prosperous path ahead.`,
+      `"Our commitment extends beyond business; it encompasses our dedication to nurturing robust partnerships that prioritize the welfare of communities," emphasized Chief Amadi Cyril, CEO Cydam Group of Companies, "Our vision aligns economic progress with societal advancement, a holistic approach that ensures mutual prosperity."`,
+      `The proposed collaboration holds promise not only for CYDAM GROUP and the Cross River State Government but also for the residents whose lives will be positively impacted. The potential revitalization of the AYADE POWER PLANT is poised to fuel economic growth, open doors for employment, and amplify the overall quality of life. This endeavor resonates with CYDAM GROUP's core values of responsible development and affordable community empowerment.`,
+      `As discussions and plans unfold between CYDAM GROUP OF COMPANIES and the Cross River State Government, a sense of optimism pervades. The intention is to jointly steer the AYADE POWER PLANT towards fruition, symbolizing a robust alliance that places progress and prosperity at its core.`,
+      `At a time when collaborative efforts are paramount, CYDAM GROUP's drive to collaborate with the Cross River State Government shines as an exemplar of collective development. While the partnership is still in its formative stages, its potential impact on society is unequivocal. It reflects CYDAM GROUP's appreciation for the state's ongoing initiatives and a shared commitment to uplift the lives of those residing within its borders.`,
+      `For inquiries and more information, please contact us.`
+    ],
+    comment: [
+      { user: 'Emily', comment: 'This initiative has the potential to make a lasting positive impact on the community. Exciting times ahead!', date: '08/29/2023' },
+      { user: 'Daniel', comment: 'Collaboration between the private sector and government is a key to progress. Kudos to CYDAM for taking the lead.', date: '08/30/2023' },
+      { user: 'Sophia', comment: `I'm looking forward to witnessing the positive transformations that this partnership will bring to the region.`, date: '08/31/2023' }
+    ]
+  },  
 
   {
     id: 12,
+    img: `/news/ayade4.jpg`,
+    imglist: [`/news/ayade_power_plant2.jpg`, `/news/ayade_power_plant3.jpg`,`/news/ayade_power_plant4.jpg`,`/news/ayade_power_plant5.jpg`, ],
+    title: "Revitalizing Hope: CYDAM GROUP's Bold Initiative to Breathe New Life into the AYADE POWER PLANT Project",
+    date: '08/24/2023',
+    author: 'Emma Udeji',
+    tags: ['community development', 'partnership', 'urban progress'],
+    category: 'News',
+    keywords: ['AYADE POWER PLANT', 'community empowerment', 'sustainable progress', 'CYDAM GROUP'],
+    highlight: 'Join us on our journey to reinvigorate the AYADE POWER PLANT and uplift communities.',
+    content: [
+      `In a remarkable testament to vision and determination, CYDAM GROUP OF COMPANIES is taking center stage in an ambitious endeavor aimed at reinvigorating the AYADE POWER PLANT project. This initiative, born from CYDAM's unwavering commitment to community well-being and economic growth, envisions a dynamic collaboration with the Cross River State Government that promises to reshape the region's future.`,
+      `The AYADE POWER PLANT, nestled within the heart of Calabar, holds immense potential as a catalyst for change. CYDAM GROUP's audacious aspiration to lead this project is a clear manifestation of their dedication to harnessing untapped opportunities for societal advancement, while nurturing a sustainable business model.`,
+      `"Our mission extends beyond corporate success; it embodies a deep-seated desire to drive positive transformation in synergy with governmental bodies," stated [Your Name], the driving force behind CYDAM GROUP OF COMPANIES. "Through this project, we aim to redefine community empowerment and sustainable progress."`,
+      `The collaboration in the making between CYDAM GROUP and the Cross River State Government holds the promise of unlocking the dormant potential of the AYADE POWER PLANT. By breathing new life into this project, both entities seek to pave the way for enhanced electricity supply, industry growth, and job creation. This initiative perfectly aligns with CYDAM GROUP's core philosophy of creating value while uplifting the community.`,
+      `As plans unfold and discussions progress, the prospect of CYDAM GROUP's role in resurrecting the AYADE POWER PLANT gains momentum. This strategic partnership represents a transformative alliance that is geared towards fostering innovation and harnessing collective resources for a brighter future.`,
+      `In an era where partnerships for sustainable development are pivotal, CYDAM GROUP's commitment to revitalizing the AYADE POWER PLANT stands as an emblem of collaborative progress. Although the collaboration is still taking shape, its potential to reshape the local landscape is undeniable. It underscores CYDAM GROUP's recognition of the state's initiatives and a shared aspiration to breathe life into a dormant project for the benefit of all.`,
+    ],
+    comment: [
+      { user: 'Jennifer', comment: 'This initiative shows the true power of collaboration. Kudos to CYDAM for their dedication!', date: '08/25/2023' },
+      { user: 'Michael', comment: `I'm excited to see the AYADE POWER PLANT project come to life again. It's a beacon of hope for our community.`, date: '08/26/2023' },
+      { user: 'Grace', comment: 'The partnership between CYDAM and the government sets a new standard for urban development. Looking forward to the positive impact!', date: '08/27/2023' }
+    ],
+  },
+  
+   { id: 12,
     img: `/energy/waste-water-ecoflex2.jpg`,
     title: 'Preserving Our Oceans: Cydam Group\'s Commitment to Waste Reduction and Marine Life Conservation',
     date: '03/10/2023',

@@ -10,8 +10,11 @@ import Newsletter from "@/component/Sections/Newsletter"
 import Testimonial from "@/component/Sections/Testimonial"
 import WideSection from "@/component/Sections/WideSection"
 import Clientele from "@/component/Sections/Clientele"
+import BlogSection from "@/component/Blog/BlogSection"
+
 import AboutServices from "@/component/Sections/AboutServices"
 import TestimonyCard from "@/component/Cards/TestimonyCard"
+import Blog from "@/component/Sections/Blog"
 
 export default function Home() {
   const {devotional} = useStateContext()
@@ -22,6 +25,8 @@ export default function Home() {
       <Head/>
       <HeroBanner/>
       <Credibility heading={'In Our Work We Have Pride. We Build A Better Tomorrow With Innovative Solutions '} text={`We offer varieties of construction and housing projects with the aim to to provide affordable and sustainable solutions while promoting economic growth and social responsibility.`} img={`construction-men-designing.jpg`} />
+      {/* <BlogSection/> */}
+      <Blog/>
       <Services/>
       <Estate/>
       <Property/>

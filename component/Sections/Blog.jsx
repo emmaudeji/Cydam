@@ -9,7 +9,7 @@ const Blog = () => {
     <div className='section-padding '>
         <div className='pb-20 flex justify-center w-full'>
             <div>
-            <SectionHeading text='Our Latest ' emphasis='Articles' whitebg='whitebg'/>
+            <SectionHeading text='Our Recent ' emphasis='News & Blogs' whitebg='whitebg'/>
             </div>
         </div>
 
