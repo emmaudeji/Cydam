@@ -19,7 +19,7 @@ import ReactMarkdown from 'react-markdown';
 
 
 
-const BlogId = ({data, id}) => {
+const BlogId = ({data,}) => {
 
     const {blogData, setBlogData, addBlogComment} = useStateContext()
     
@@ -55,6 +55,11 @@ const BlogId = ({data, id}) => {
     
 
     console.log('newComment', newComment)
+    console.log('POSTTTT', blogPost)
+
+    const {id, img, title, date, author, tags, comment, keywords, highlight, content} = blogPost;
+
+
     
   return (
     <>
@@ -70,59 +75,49 @@ const BlogId = ({data, id}) => {
             </Link>
 
             <div className=" bg-blue-50 py-10">
-                {
-                    blogPost?.map(({id, img, title, date, author, tags, category, comment, keywords, highlight, content}) => {
-                        return (
-                            <div key={id} className=" grid gap-10">
-                                <div className=" px-4 sm:px-10 ">
-                                    <h2 className="text-3xl font-bold pb-2">
-                                        {title}
-                                    </h2>
-                                    <p className="text-lg pb-4 ">{highlight}</p>
-                                    <div className='flex justify-between border-t-2 pt-6 items-center '>
-                                        <div className="flex gap-3 items-center">
-                                            <p className="text-zinc-700"><CgProfile size={20}/></p>
-                                            <p className="text-zinc-700 font-semibold">{author}</p>
-                                        </div>
-                                        
-                                        <p className="flex gap-3">
-                                           <MdDateRange size={20}/> <p>{date}</p>
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div className="w-full h-[300px] sm:h-[450px] overflow-hidden">
-                                    <Image width={500} height={500} src={img} alt={author} className="image-style"/>
-                                </div>
-
-                                <div className="px-4 sm:px-10 ">
-                                    <div onClick={() => scrollToElement(`Comments`)}  className="flex gap-3 items-center border-b-2 pb-6 ">
-                                            <p className="text-zinc-700"><FaRegComments size={20}/></p>
-                                            <p className="text-zinc-700">{comment.length}</p>
-                                            <p className="text-zinc-700">Comments</p>
-                                    </div>
-                                </div>
-
-                                <div className="grid gap-8 px-4 sm:px-10">
-                                    {/* {
-                                        content?.map((item, i) => (
-                                            <p key={i}>{item}</p>
-                                        ))
-                                    } */}
-                                          <ReactMarkdown>{content.join('\n\n')}</ReactMarkdown>
-
-                                </div>
+                <div key={id} className=" grid gap-10">
+                    <div className=" px-4 sm:px-10 ">
+                        <h2 className="text-3xl font-bold pb-2">
+                            {title}
+                        </h2>
+                        <p className="text-lg pb-4 ">{highlight}</p>
+                        <div className='flex justify-between border-t-2 pt-6 items-center '>
+                            <div className="flex gap-3 items-center">
+                                <p className="text-zinc-700"><CgProfile size={20}/></p>
+                                <p className="text-zinc-700 font-semibold">{author}</p>
                             </div>
-                        )
-                    })
-                }
+                            
+                            <p className="flex gap-3">
+                                <MdDateRange size={20}/> <p>{date}</p>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className="w-full h-[300px] sm:h-[450px] overflow-hidden">
+                        <Image width={500} height={500} src={img} alt={author} className="image-style"/>
+                    </div>
+
+                    <div className="px-4 sm:px-10 ">
+                        <div onClick={() => scrollToElement(`Comments`)}  className="flex gap-3 items-center border-b-2 pb-6 ">
+                                <p className="text-zinc-700"><FaRegComments size={20}/></p>
+                                <p className="text-zinc-700">{comment?.length}</p>
+                                <p className="text-zinc-700">Comments</p>
+                        </div>
+                    </div>
+
+                    <div className="grid gap-8 px-4 sm:px-10">
+                            <ReactMarkdown>{content?.join('\n\n')}</ReactMarkdown>
+
+                    </div>
+                </div>
+                    
             </div>
             
             <div id="Comments" className="py-10 border-t-2 px-4 sm:px-10">
                 <h3 className="text-3xl font-bold">Comments</h3>
                 <div className="grid gap-6 pt-8">
                     {
-                        blogPost[0]?.comment?.map((item, i) => (
+                        blogPost?.comment?.map((item, i) => (
                             <div className="border-b-2 pb-6" key={i}>
                                 
                                 <p>{item.comment}</p>
@@ -168,22 +163,6 @@ const BlogId = ({data, id}) => {
 export default BlogId
 
 
-
-// export const getServerSideProps  = async ({params}) => {
-   
-//     const id = Number(params.blogId)
-//     // console.log('iiiii----', id,   'p--', params )
-//     const data = blog?.filter(items => items.id === id)
-   
-//   console.log(data)
-//     return {
-//       props: {
-//         data: data,
-//         id: id
-//       }
-//     }
-//   }
-
   export const getServerSideProps = async ({ params }) => {
     const { slug } = params;
   
@@ -191,6 +170,7 @@ export default BlogId
       // Fetch project data by id
       
       const data = blog?.find((item) => item.title === slug);
+      console.log(data, slug)
   
       if (!data) {
         return {
@@ -198,11 +178,11 @@ export default BlogId
         };
       }
   
-      return { props: { data: data,
-        id: id } };
+      return { props: { data: data,} };
     } catch (error) {
       console.error(error);
       return { props: { course: null } };
     }
   };
+
   

@@ -5,6 +5,157 @@ export const blogCategory = [ `Real Estate`, `Building Construction`, `Project M
 
 
 export const blog = [
+  
+  {
+  id: 21,
+  ogImg: "https://cydamgroup.org/_next/image?url=%2Ffuntua%2Flionspark1.jpeg&w=640&q=75",
+  img: "/funtua/lionspark1.jpeg",
+  title: "Lion's Park Industrial Estate: Enugu State's Gateway to Prosperity through Collaboration",
+  date: "09/02/2023",
+  author: "Sarah Williams",
+  tags: ["Lion's Park Industrial Estate", "Enugu State", "investment", "collaboration"],
+  category: "News",
+  keywords: ["Free Trade Zone", "investment opportunities", "economic development", "Enugu State"],
+  highlight: "Unveiling a new era of economic growth: Lion's Park Industrial Estate and the power of collaboration in Enugu State.",
+  content: [
+    "Enugu State is set to embark on an exciting journey towards economic prosperity with the creation of the Lion's Park Industrial Estate. This visionary project is not just about infrastructure development; it's a testament to the power of collaboration.",
+    "Situated strategically in the heart of the state, Lion's Park Industrial Estate is designed to become a Free Trade Zone, opening new horizons for both local and international investors. This initiative aims to boost economic growth, create jobs, and position Enugu State as a hub for trade and commerce.",
+    "The concept of a Free Trade Zone is a game-changer for businesses and entrepreneurs. It offers a range of incentives, including tax breaks, simplified customs procedures, and a conducive business environment. This encourages investment and paves the way for more investors to participate in the state's development.",
+    "One of the key factors contributing to the success of Lion's Park Industrial Estate is collaboration. The project is a result of joint efforts between the Enugu State Government and private sector partners who share a common vision for the state's economic advancement.",
+    "The government's commitment to infrastructure development and investment-friendly policies has created an environment where businesses can thrive. Private sector leaders have recognized this potential and are actively contributing to the project's success.",
+    "A spokesperson for Lion's Park Industrial Estate, emphasized the significance of collaboration, stating, \"Enugu State is witnessing a transformative initiative that demonstrates what can be achieved when government and the private sector work together. This is a remarkable opportunity for investors and businesses alike.\"",
+    "The establishment of a Free Trade Zone is expected to attract a diverse range of industries, from manufacturing to logistics and services. It will stimulate job creation and enhance the state's competitiveness on both the national and international fronts.",
+    "As Lion's Park Industrial Estate takes shape, Enugu State is poised to become a beacon of economic growth and innovation. The project represents a commitment to a brighter future, where collaboration and investment drive prosperity.",
+    "Stay tuned for updates as Lion's Park Industrial Estate opens its doors to a world of opportunities for Enugu investors and businesses."
+  ],
+  comment: [
+
+    {
+      user: "Michael",
+      comment: "I'm excited about the opportunities this project will bring to our state. Enugu is set to shine.",
+      date: "09/03/2023"
+    }
+  ]
+},
+  {
+    id: 20,
+    ogImg: "https://cydamgroup.org/_next/image?url=%2Ffuntua%2Ffuntua2.jpeg&w=640&q=75",
+    img: "/funtua/funtua2.jpeg",
+    title: "Funtua Inland Dry Port: A Gateway to Economic Growth in Nassarawa State",
+    date: "09/01/2023",
+    author: "Emma Johnson",
+    tags: ["Funtua Inland Dry Port", "economic growth", "Nassarawa State", "logistics"],
+    category: "News",
+    keywords: ["trade facilitation", "infrastructure development", "cargo logistics", "Nassarawa State economy"],
+    highlight: "Transforming Nassarawa State's economic landscape: The Funtua Inland Dry Port sets the stage for trade and growth.",
+    content: [
+      "Nassarawa State is on the brink of a significant economic transformation with the emergence of the Funtua Inland Dry Port. This state-of-the-art logistics hub promises to revolutionize trade and commerce, not only within the state but throughout the region.",
+      "Strategically located in Funtua City, this inland dry port is poised to become a pivotal center for cargo logistics. Its proximity to major highways, railways, and airports makes it an ideal gateway for the transportation of goods and commodities.",
+      "The Funtua Inland Dry Port offers a range of benefits for businesses and the local economy. It reduces transportation costs, shortens delivery times, and enhances supply chain efficiency. This, in turn, creates opportunities for businesses to expand and flourish.",
+      "One of the key advantages of this facility is its potential to decongest traditional seaports. With direct access to international markets via rail and road, Nassarawa State is now better equipped to handle imports and exports seamlessly.",
+      "Moreover, the dry port is expected to generate employment opportunities for the local population. As it becomes fully operational, it will require a skilled workforce to manage cargo handling, customs clearance, and other logistics activities.",
+      "The Nassarawa State Government, recognizing the significance of the Funtua Inland Dry Port, has actively supported its development. This public-private partnership exemplifies the government's commitment to infrastructure development and economic growth.",
+      "The DG of Nassarawa state, expressed their enthusiasm, stating, \"We are proud to be part of Nassarawa State's journey towards economic prosperity. The Funtua Inland Dry Port will play a pivotal role in boosting trade and catalyzing growth.\"",
+      "As preparations for the dry port's full-scale operations continue, the region eagerly anticipates the positive impact it will have on trade facilitation, job creation, and the overall economic landscape of Nassarawa State.",
+      "Stay tuned for updates as the Funtua Inland Dry Port sets the stage for a new era of economic growth in Nassarawa State."
+    ],
+    comment: [
+
+      {
+        user: "Oliver",
+        comment: "I'm excited to see how this dry port will boost trade and logistics in the region. Nassarawa State is heading in the right direction.",
+        date: "09/02/2023"
+      },
+      {
+        user: "Aisha",
+        comment: "The government's support for this project is commendable. It's a testament to their commitment to economic development.",
+        date: "09/01/2023"
+      }
+    ]
+  },  
+  {
+    id: 19,
+    ogImg: "https://cydamgroup.org/_next/image?url=%2Ffuntua%2Ffuntua4.jpeg&w=640&q=75",
+    img: "/funtua/funtua4.jpeg",
+    
+    title: "Empowering Nassarawa State: CYDAM GROUP's Holistic Strategy for Uplifting Livelihoods",
+    date: "08/25/2023",
+    author: "Jane Udoka",
+    tags: ["community development", "CYDAM GROUP", "livelihood empowerment", "Nassarawa State"],
+    category: "News",
+    keywords: ["sustainable development", "economic empowerment", "Nassarawa State strategy"],
+    highlight: "A vision for progress: CYDAM GROUP's comprehensive approach to improving lives and fostering prosperity in Nassarawa State.",
+    content: [
+      "In a landmark endeavor to promote holistic development and enhance the quality of life in Nassarawa State, CYDAM GROUP has unveiled a strategic plan that goes beyond traditional investments. With a profound commitment to community well-being, the group's strategy aims to uplift livelihoods and drive sustainable progress.",
+      "CYDAM GROUP recognizes that economic empowerment and social development are intrinsically linked. As such, their strategy encompasses a multi-pronged approach that spans various sectors, including agriculture, education, healthcare, and infrastructure.",
+      "One of the cornerstones of this strategy is the promotion of agriculture as a means of livelihood empowerment. Nassarawa State's fertile lands hold immense potential, and CYDAM GROUP intends to invest significantly in modernizing agricultural practices, providing training to local farmers, and facilitating access to markets.",
+      "Education forms another critical component of the strategy. CYDAM GROUP plans to establish scholarship programs, build schools, and enhance the quality of education in the state. They believe that education is a powerful tool for empowering individuals and driving long-term progress.",
+      "Healthcare initiatives will also play a pivotal role in improving livelihoods. The group aims to build healthcare facilities, provide medical supplies, and support healthcare professionals to ensure that residents have access to quality healthcare services.",
+      "Furthermore, CYDAM GROUP will invest in infrastructure development, including road networks and utilities, to create an environment conducive to economic growth and community well-being.",
+      "The Nassarawa State Government has welcomed CYDAM GROUP's comprehensive approach to development, expressing optimism about the positive impact it will have on the state. The government's collaboration with CYDAM GROUP reflects their shared vision for progress and prosperity.",
+      "The DG of CYDAM GROUP, remarked, \"Our strategy for Nassarawa State is built on the belief that sustainable development begins with the empowerment of individuals and communities. We are dedicated to improving livelihoods and fostering a brighter future for all.\"",
+      "As CYDAM GROUP's initiatives unfold, Nassarawa State residents can look forward to a transformative journey towards economic empowerment, enhanced access to essential services, and an improved quality of life.",
+      "Stay tuned for updates as CYDAM GROUP's holistic strategy takes root and paves the way for a prosperous Nassarawa State."
+    ],
+    comment: [
+      {
+        user: "Daniel",
+        comment: "This holistic approach is exactly what Nassarawa State needs. Kudos to CYDAM GROUP for their dedication to community development.",
+        date: "08/28/2023"
+      },
+      {
+        user: "Fatima",
+        comment: "I'm excited to see the positive changes this strategy will bring to our state. CYDAM GROUP's commitment is commendable.",
+        date: "08/27/2023"
+      },
+      {
+        user: "James",
+        comment: "Investing in education and healthcare is an investment in our future. Nassarawa State is on the right path with this strategy.",
+        date: "08/27/2023"
+      }
+    ]
+  },  
+  {
+    id: 18,
+    ogImg: `/https://www.cydamgroup.org/_next/image?url=%2Fhousing%2Fsteel-hut-estate.png&w=640&q=75`,
+  img: "/funtua/funtua1.jpeg",
+  title: "Transformative Investments in Mechanized Agriculture and Beyond in Nassarawa State ",
+  date: "09/15/2023",
+  author: "Emma Udeji",
+  tags: ["investment", "agriculture", "community development", "partnership"],
+  category: "News",
+  keywords: ["CYDAM GROUP", "investment opportunities", "Nassarawa State", "mechanized agriculture"],
+  highlight: "Unlocking new horizons: CYDAM Group's collaboration with Nassarawa State promises to uplift communities and foster sustainable development.",
+  content: [
+      "In a momentous development that underscores its commitment to community upliftment and sustainable progress, CYDAM GROUP recently held a strategic meeting with the Nassarawa State Investment Agency. The agenda? Exploring transformative investment opportunities that will reshape the landscape of Nassarawa State and pave the way for prosperity.",
+      "The meeting, characterized by enthusiasm and shared vision, marked a significant step forward in the pursuit of meaningful change. CYDAM GROUP, a stalwart in the world of innovative investments, aims to leverage its expertise to propel Nassarawa State towards economic growth and social well-being.",
+      "One of the key focal points of this partnership is mechanized agriculture. Recognizing the immense potential of the state's fertile lands, CYDAM GROUP plans to invest substantially in modernizing agricultural practices. This move not only promises to increase agricultural productivity but also generate employment opportunities for the local population.",
+      "The CYDAM GROUP's commitment to mechanized agriculture aligns seamlessly with Nassarawa State's vision for agricultural transformation. The state's government has been proactive in creating an enabling environment for investors, and this partnership is a testament to their dedication to progress.",
+      "Speaking about the collaboration, the visionary leader at CYDAM GROUP, stated, \"We are excited about the prospects of this partnership with Nassarawa State. Our focus is not just on investments but on fostering sustainable development that touches the lives of the people.\"",
+      "Beyond mechanized agriculture, the partnership envisions a multifaceted approach to development. It includes initiatives in sectors such as healthcare, education, and infrastructure. These investments are poised to enhance the overall quality of life for Nassarawa State residents.",
+      "The Nassarawa State Government, represented by the commissioner of commerce and industry and DG Katsina State investment Promotion Agency. expressed their enthusiasm for the collaboration, stating, \"We welcome CYDAM GROUP with open arms. Together, we will usher in a new era of growth and prosperity for our state.\"",
+      "The ripple effect of this partnership is expected to be felt far and wide. From job creation to improved access to essential services, the CYDAM GROUP's investment initiatives promise to transform Nassarawa State into a hub of progress.",
+      "As the plans take shape and projects are implemented, stay tuned for updates on the exciting journey of transformation and community upliftment in Nassarawa State."
+    ],
+    comment: [
+      {
+        user: "Sarah",
+        comment: "This partnership is a game-changer for Nassarawa State. Kudos to CYDAM GROUP for their commitment to community development.",
+        date: "09/16/2023"
+      },
+      {
+        user: "Michael",
+        comment: "I'm thrilled to see investment opportunities expanding in our state. Nassarawa is on the path to greatness!",
+        date: "09/17/2023"
+      },
+      {
+        user: "Amina",
+        comment: "It's heartening to see private sector leaders like CYDAM GROUP stepping up to drive positive change in our communities.",
+        date: "09/18/2023"
+      }
+    ]
+  },  
+
   {
     id: 17,
     img: `/news/tinapa2.jpg`, // Replace with the actual image path
@@ -56,6 +207,7 @@ export const blog = [
 ,  
   {
     id: 15,
+    ogImg: `/https://www.cydamgroup.org/_next/image?url=%2Fhousing%2Fsteel-hut-estate.png&w=640&q=75`,
     img: `/news/tp-land2.jpg`, // Replace with the actual image path
     title: "Pioneering Progress: CYDAM GROUP Explores New Horizons with Inter City and Intra City Transport and Logistics Project",
     date: '08/24/2023',

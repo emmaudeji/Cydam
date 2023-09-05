@@ -27,10 +27,10 @@ const BlogPage = ({data}) => {
       )
 
     setBlogs(blogBycategory)
-    console.log('kkkk', blogBycategory)
+
   }, [category])
   
-  console.log('bbbbbbb', blogs, category)
+ 
 
   return (
     <>
@@ -39,7 +39,7 @@ const BlogPage = ({data}) => {
 
     <div className="pt-48">
 
-      <section className="section-padding2 pb-24 grid gap-4 lg:grid-cols-4">
+      <section className="section-padding2 pb-24 grid gap-4 lg:grid-cols-5">
         
         <div className="article lg:col-span-1">
 
@@ -106,7 +106,7 @@ const BlogPage = ({data}) => {
         </div>
 
 
-        <div className="main w-full lg:col-span-3">
+        <div className="main w-full lg:col-span-4">
           <div className="flex gap-4 py-6 items-center">
             <p className="text-lg">Category: </p>
             <h3 className="text-2xl font-bold capitalize">{category}</h3>
