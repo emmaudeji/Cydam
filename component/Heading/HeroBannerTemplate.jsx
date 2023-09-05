@@ -7,9 +7,10 @@ export const HeroTemplate = ({title, img, description, btnLink1, btnTxt1, btnLin
       <div className='section-padding2 items-center grid md:grid-cols-2 gap-8 lg:gap-14 xl:gap-24 '>
   
         <div className="text ">
-          <h4 className='text-base'>{title}</h4>
-          <h1 className="capitalize text-[30px]  md:text-[40px] lg:text-[50px]  font-bold leading-[40px] lg:leading-[55px] pb-2 lg:pb-6">{description}
+        <h1 className="capitalize text-[30px]  md:text-[40px] lg:text-[50px]  font-bold leading-[40px] lg:leading-[55px] pb-2">{title}
           </h1>
+          <h4 className='text-xl pb-6'>{description}</h4>
+          
   
           <div className='flex gap-4'>
             {btnLink1 ? <Link href={`${btnLink1}`}> <BtnLarge text={btnTxt1}/></Link> : null}

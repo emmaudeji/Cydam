@@ -9,7 +9,7 @@ const BlogCard = ({ img, title, highlight, id}) => {
         </div>
           
           <div className="grid gap-1">
-              <h1 className="text-lg font-semibold">{title}</h1>
+              {/* <h1 className="text-lg font-semibold">{title}</h1> */}
               <p className="">{highlight}</p>
               <Link href={`/blog/${id}`} className="text-blue-700 text-sm font-semibold">Read Post</Link>
           </div>

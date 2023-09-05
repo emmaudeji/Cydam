@@ -24,12 +24,12 @@ export default function Home() {
     <>
       <Head/>
       <HeroBanner/>
-      <Credibility heading={'In Our Work We Have Pride. We Build A Better Tomorrow With Innovative Solutions '} text={`We offer varieties of construction and housing projects with the aim to to provide affordable and sustainable solutions while promoting economic growth and social responsibility.`} img={`construction-men-designing.jpg`} />
+      <Credibility heading={'In Our Work We Have Pride. We Build A Better Tomorrow With Innovative Solutions '} text={`We offer varieties of construction and housing projects with the aim to to provide affordable and sustainable solutions through viable partnerships and sustainable construction.`} img={`construction-men-designing.jpg`} />
       {/* <BlogSection/> */}
       <Blog/>
       <Services/>
       <Estate/>
-      <Property/>
+      {/* <Property/> */}
       <WideSection 
         heading='We Offer The Most Complete Urban Development Services.'
         text={`Our goal is to help our clients create vibrant, livable, and sustainable urban environments. With our complete urban development services, we can help you achieve your vision for your community.`}

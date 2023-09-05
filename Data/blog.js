@@ -32,7 +32,7 @@ export const blog = [
 
   {
     id: 16,
-    img: `/news/office.jpg`, // Replace with the actual image path
+    img: `/housing/house6.jpg`, // Replace with the actual image path
     title: "Unveiling Visions: CYDAM GROUP Explores Future Prospects at Proposed Office Complex in Calabar",
     date: '08/24/2023',
     author: 'Emma Udeji',
@@ -472,7 +472,7 @@ export const blog = [
 
       {
         id: 2,
-        img: `/investment/coins.avif`,
+        img: `/construction/women-construction.jpg`,
         title: 'Sustainable Building Practices in Construction',
         date: '05/20/2023',
         author: 'Emily Emeh',

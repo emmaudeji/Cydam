@@ -49,7 +49,7 @@ const Footer = () => {
           </div>
          
           <div className="blog sm:col-span-2 lg:col-span-1 ">
-            <div className="grid gap-2">
+            <div className="grid gap-4">
               {
                 blog.slice(0,3).map(({id, img, link, title, highlight})=> (
                   <div key={id} className="">

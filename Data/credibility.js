@@ -3,7 +3,7 @@ import {MdOutlineHandshake, MdOutlineEco, MdOutlineEngineering, MdHouseSiding} f
 export const credibility = [
     {
         id: 0,
-        title: '6',
+        title: '6+',
         text: `Global Partnership`,
         icon: <MdOutlineHandshake/>,
         link: '/about'
@@ -18,7 +18,7 @@ export const credibility = [
     {
         id: 2,
         text: 'Professional Engineers',
-        title: '183',
+        title: '140+',
         icon: <MdOutlineEngineering/>,
         link: '/about'
     },

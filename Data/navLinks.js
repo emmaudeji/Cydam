@@ -45,11 +45,11 @@ export const navLinks = [
         link: `/services`,
         subMenu: services
     },
-    {
-        id: 5,
-        title: `Properties`,
-        link: `/properties`
-    },
+    // {
+    //     id: 5,
+    //     title: `Properties`,
+    //     link: `/properties`
+    // },
    
     {
         id: 2,

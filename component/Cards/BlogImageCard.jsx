@@ -25,7 +25,7 @@ const BlogImageCard = ({id, title, author, comment,  highlight, date, img,}) => 
             </div>
 
             <div className=''>
-                <h3 className='font-semibold text-secondary  text-xl'>{title}</h3>
+                <h3 className='font-semibold text-secondar  text-lg'>{title}</h3>
                 <p className=''>{highlight}</p>
             </div>
 
