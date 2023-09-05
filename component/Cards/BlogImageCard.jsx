@@ -32,7 +32,7 @@ const BlogImageCard = ({id, title, author, comment,  highlight, date, img,}) => 
             <div className="flex justify-between">
                 <div className="flex items-center gap-2 font-semibold text-tertiary hover:scale-110 duration-300">
                     <div >
-                        <Link href={`/blog/${id}`} className=''>Learn more</Link>
+                        <Link href={`/blog/${title}`} className=''>Learn more</Link>
                     </div>
                     <p className=""><MdOutlineArrowRightAlt/></p>
                 </div>

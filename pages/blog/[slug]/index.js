@@ -169,17 +169,40 @@ export default BlogId
 
 
 
-export const getServerSideProps  = async ({params}) => {
+// export const getServerSideProps  = async ({params}) => {
    
-    const id = Number(params.blogId)
-    // console.log('iiiii----', id,   'p--', params )
-    const data = blog?.filter(items => items.id === id)
+//     const id = Number(params.blogId)
+//     // console.log('iiiii----', id,   'p--', params )
+//     const data = blog?.filter(items => items.id === id)
    
-  console.log(data)
-    return {
-      props: {
-        data: data,
-        id: id
+//   console.log(data)
+//     return {
+//       props: {
+//         data: data,
+//         id: id
+//       }
+//     }
+//   }
+
+  export const getServerSideProps = async ({ params }) => {
+    const { slug } = params;
+  
+    try {
+      // Fetch project data by id
+      
+      const data = blog?.find((item) => item.title === slug);
+  
+      if (!data) {
+        return {
+          notFound: true,
+        };
       }
+  
+      return { props: { data: data,
+        id: id } };
+    } catch (error) {
+      console.error(error);
+      return { props: { course: null } };
     }
-  }
+  };
+  

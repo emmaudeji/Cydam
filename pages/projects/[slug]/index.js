@@ -19,7 +19,7 @@ const Project = ({ data }) => {
     setPage(data);
   }, [data]);
 
-  const { id, img, partners, clients, details, heading, projectType } = page;
+  const { id, img, ogImg, partners, clients, details, heading, projectType } = page;
   const tags = [
     { title: "Project Type", type: projectType },
     { title: "Clients", type: clients },
@@ -41,7 +41,7 @@ const Project = ({ data }) => {
 
   return (
     <>
-      <Head title="Cydam - Project" ogImg={img} />
+      <Head title="Cydam - Project" ogImg={ogImg} />
       <PageHeroBanner
         heading="Cutting-Edge Technology"
         img="/housing/estate2.jpg"
