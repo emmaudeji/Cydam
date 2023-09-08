@@ -57,13 +57,13 @@ const BlogId = ({data,}) => {
     console.log('newComment', newComment)
     console.log('POSTTTT', blogPost)
 
-    const {id, img, title, date, author, tags, comment, keywords, highlight, content} = blogPost;
-
+    const {id, img, title, date, author, ogImg, tags, comment, keywords, highlight, content} = blogPost;
 
     
   return (
     <>
-    <Head/>
+      <Head title="Cydam - News" ogImg={ogImg?ogImg:null} />
+
       <PageHeroBanner heading='Read Blog Post' img="/housing/estate2.jpg" page={`Home > Blog > Post`}/>
 
       <div className="pt-48">
