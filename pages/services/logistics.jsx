@@ -27,7 +27,7 @@ const logistics = () => {
               `Collaborate with sustainability-focused partners `
             ]
           } 
-        btnText='Get Started' btnLink='/quote'/>}
+        btnText='Get Started' btnLink='/contact'/>}
       />
           
           <GridBanner 

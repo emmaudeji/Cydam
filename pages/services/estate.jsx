@@ -20,7 +20,7 @@ const estate = () => {
       <AboutServices
       heading={`Sustainable housing focused on promoting African architecture`}
       note1='Elevating African Real Estate with Quality and Style.' note2='Innovation Meets Affordability in Our Steel Homes' note3='Making Home Ownership a Reality for All' img1='/housing/estate3.jpg' img2='/housing/steel-building.png'
-      component={<AboutRealEstate btnText='Own A Home' btnLink='#properties'/>}
+      component={<AboutRealEstate btnText='Own A Home' btnLink='/contact'/>}
       
       />
           

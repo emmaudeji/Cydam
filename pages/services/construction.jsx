@@ -20,7 +20,7 @@ const construction = () => {
       <AboutServices
       heading={`We buil Innovative Lightweight structures in cold-rolled steel`}
       note1='Cutting-Edge Construction with Sustainable Materials' note2='Redefining Construction with Cold-Rolled Steel' note3='Affordable Construction with Innovative Technology' img1='/construction/construction-steel1.jpeg' img2='/housing/estate2.jpg'
-      component={<AboutConstruction btnText='Get A Quote' btnLink='/quote'/>}
+      component={<AboutConstruction btnText='Get A Quote' btnLink='/contact'/>}
       
       />
           

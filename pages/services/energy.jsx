@@ -20,7 +20,7 @@ const energy = () => {
       heading={`Harnessing Solar, Wind, and Biomass for greener tomorrow`}
       note1='Cutting-Edge Renewable Energy Mix' note2='Turning Waste into Power with Innovative Technologies' note3='Reduce grid and battery
       Costs and level out power supply' img1='/energy/solar.png' img2='/energy/solar-with-inverter.png'
-      component={<AboutConstruction btnText='Get A Quote' btnLink='/quote'/>}
+      component={<AboutConstruction btnText='Get A Quote' btnLink='/contact'/>}
       
       />
           

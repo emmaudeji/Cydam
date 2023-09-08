@@ -31,7 +31,7 @@ const mining = () => {
               `Gauranteed Quality assurance`
             ]
           } 
-        btnText='Get Started' btnLink='/quote'/>}
+        btnText='Get Started' btnLink='/contact'/>}
       />
           
           <GridBanner 

@@ -18,7 +18,7 @@ const Project = () => {
         </h2>
     </section>
     <Projects/>
-    <CTAprojects link={`/quote`} btnTxt={`Get Quote`} heading={` Trust Us to handle your project with cutting-edge tech innovation`}/>
+    <CTAprojects link={`/contact`} btnTxt={`Get Quote`} heading={` Trust Us to handle your project with cutting-edge tech innovation`}/>
     <Newsletter />
     </div>
     </>

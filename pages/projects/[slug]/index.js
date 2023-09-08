@@ -98,7 +98,7 @@ const Project = ({ data }) => {
         <CTAprojects
           btnTxt="Get quote"
           heading="We help you reduce project cost with our innovative approach to construction and project design"
-          link="/quote"
+          link="/contact"
         />
       </div>
 
