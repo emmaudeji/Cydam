@@ -3,7 +3,7 @@ export const projects = [
     {
         id: 9,
         img: `/_next/image?url=%2Fhousing%2Fsteel-hut-estate.png&w=640&q=75`,
-        ogImg: `/https://www.cydamgroup.org/_next/image?url=%2Fhousing%2Fsteel-hut-estate.png&w=640&q=75`,
+        ogImg: `https://www.cydamgroup.org/_next/image?url=%2Fhousing%2Fsteel-hut-estate.png&w=640&q=75`,
         title: 'Strength and Longevity',
         text: 'Sustainable Mass Housing in Nigeria',
         date: '05/30/2023',
@@ -39,7 +39,7 @@ export const projects = [
       {
         id: 8,
         img: `/_next/image?url=%2Fenergy%2Fenergy-ecoflex-ecoflex2.jpg&w=640&q=75`,
-        ogImg: `/https://www.cydamgroup.org/_next/image?url=%2Fenergy%2Fenergy-ecoflex-ecoflex2.jpg&w=640&q=75`,
+        ogImg: `https://www.cydamgroup.org/_next/image?url=%2Fenergy%2Fenergy-ecoflex-ecoflex2.jpg&w=640&q=75`,
         title: 'Bygcom, Cydam Group',
         text: ` Building the Future of Construction in West Africa`,
         date: '07/18/2023',
@@ -73,7 +73,7 @@ export const projects = [
       {
         id: 7,
         img: `/_next/image?url=%2Fenergy%2Fcydm-ecoflex-meating.jpg&w=640&q=75`,
-        ogImg: `/https://www.cydamgroup.org/_next/image?url=%2Fenergy%2Fcydm-ecoflex-meating.jpg&w=640&q=75`,
+        ogImg: `https://www.cydamgroup.org/_next/image?url=%2Fenergy%2Fcydm-ecoflex-meating.jpg&w=640&q=75`,
         title: 'A Strategic Alliance',
         text: ` Ecoflex and Cydam Group Tackle Water Cleaning in West Africa`,
         date: '09/05/2023',
@@ -107,7 +107,7 @@ export const projects = [
     {
         id: 6,
         img: `/_next/image?url=%2Fenergy%2Fwaste-meeting2-ecoflex.jpg&w=640&q=75`,
-        ogImg: `/https://www.cydamgroup.org/_next/image?url=%2Fenergy%2Fwaste-meeting2-ecoflex.jpg&w=640&q=75`,
+        ogImg: `https://www.cydamgroup.org/_next/image?url=%2Fenergy%2Fwaste-meeting2-ecoflex.jpg&w=640&q=75`,
         title: 'Waste to Power',
         text: 'Ecoflex Ltd and Cydam Group Partnership',
         date: '08/20/2023',
@@ -146,7 +146,7 @@ export const projects = [
     {
         id: 0,
         img: `/_next/image?url=%2Fconstruction%2Fconstruction-flooring.jpg&w=640&q=75`,
-        ogImg: `/https://www.cydamgroup.org/_next/image?url=%2Fconstruction%2Fconstruction-flooring.jpg&w=640&q=75`,
+        ogImg: `https://www.cydamgroup.org/_next/image?url=%2Fconstruction%2Fconstruction-flooring.jpg&w=640&q=75`,
         imgList: [`/construction/project04-650x700.jpg`, `/construction/project05-650x700.jpg`, ],
         relatedProject: [`/construction/project01-650x700.jpg`, `/construction/project02-650x700.jpg`, `/construction/project03-650x700.jpg`, ],
         title: `The Steel Spires `,
@@ -171,7 +171,7 @@ export const projects = [
     {
         id: 1,
         img: `/_next/image?url=%2Fenergy%2Fsolar.png&w=640&q=75`,
-        ogImg: `/https://www.cydamgroup.org/_next/image?url=%2Fenergy%2Fsolar.png&w=640&q=75`,
+        ogImg: `https://www.cydamgroup.org/_next/image?url=%2Fenergy%2Fsolar.png&w=640&q=75`,
         imgList: [`/energy/solar-with-inverter.png`, `/energy/solar.png`, ],
         relatedProject: [`/energy/wind.png`, `/energy/waste.png`, `/energy/water-plant.png`, ],
         title: `SolarVista `,
@@ -210,7 +210,7 @@ export const projects = [
     {
         id: 2,
         img: `/_next/image?url=%2Fhousing%2Fsteel-hut1.png&w=640&q=75`,
-        ogImg: `/https://www.cydamgroup.org/_next/image?url=%2Fhousing%2Fsteel-hut1.png&w=640&q=75`,
+        ogImg: `https://www.cydamgroup.org/_next/image?url=%2Fhousing%2Fsteel-hut1.png&w=640&q=75`,
         imgList: [`/housing/steel-hut1.png`, `/housing/steel-building.png`, ],
         relatedProject: [`/housing/estate2.jpg`, `/housing/estate3.jpg`, `/housing/estate3.jpg`, ],
         title: `The Modern Villa `,
