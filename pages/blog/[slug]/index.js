@@ -59,10 +59,10 @@ const BlogId = ({data,}) => {
 
     const {id, img, title, date, author, ogImg, tags, comment, keywords, highlight, content} = blogPost;
 
-    
+
   return (
     <>
-      <Head title="Cydam - News" ogImg={ogImg?ogImg:null} />
+      <Head title="Cydam - News" ogImg={ogImg} />
 
       <PageHeroBanner heading='Read Blog Post' img="/housing/estate2.jpg" page={`Home > Blog > Post`}/>
 
