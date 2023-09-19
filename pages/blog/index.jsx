@@ -9,6 +9,7 @@ import Blog from "@/component/Sections/Blog"
 import { blog } from "@/Data/blog"
 import { blogCategory } from "@/Data/blog"
 import BlogImageCard from "@/component/Cards/BlogImageCard"
+import CreateBlog from "@/component/Forms/CreateBlog"
 
 const BlogPage = ({data}) => {
   const [show, setShow] = useState(false)
@@ -30,6 +31,20 @@ const BlogPage = ({data}) => {
 
   }, [category])
   
+
+  // const fetchblogs = () => {
+  
+  //     fetch('/api/blogs')
+  //       .then((response) => response.json())
+  //       .then((data) => {
+  //         // setDataFromApi(data);
+  //         console.log('Documents===', data);
+  //       })
+  //       .catch((error) => {
+  //         console.error('Error fetching data:', error);
+  //       });
+   
+  // }
  
 
   return (
@@ -39,7 +54,18 @@ const BlogPage = ({data}) => {
 
     <div className="pt-48">
 
+      {/* <div className="py-10">
+        <button onClick={fetchblogs} className="px-10 py-3 mb-8 bg-blue-600 text-white text-center">
+          Fetch Blogs
+        </button>
+
+
+      </div> */}
+
+      
+
       <section className="section-padding2 pb-24 grid gap-4 lg:grid-cols-5">
+
         
         <div className="article lg:col-span-1">
 

@@ -1,42 +1,95 @@
-export const blogCategory = [ `Real Estate`, `Building Construction`, `Project Management`, `Waste Management`, `Energy`, `News`, 'Urban Development', 
+export const blogCategory = [ `Real Estate`, `Building Construction`, `Project Management`, `Waste Management`, `Energy`, `News`, 'Urban Development', 'ransport & Logistics, Minning & Manufacturing'
 ]
 
 
 
 
 export const blog = [
+  {
+    author: "Emma Johnson",
+    category: "Minning & Manufacturing",
+    tags: "Business, Mining, Coal, Minning & Manufacturing, Enugu state, Economic growth, Collaboration",
+    content: "In a significant stride towards economic development and sustainability, CYDAM Group is proud to announce its recent endeavor in Enugu State—the commencement of site clearing for the mining and export of coal. This ambitious project promises not only to revitalize the coal mining industry but also to contribute substantially to the economic growth of Enugu State.\n\nCYDAM Group, a key player in various sectors including mining and manufacturing, building and construction, energy generation, logistics, and transportation, has embarked on this venture with a vision to harness the rich coal reserves of Enugu State. By doing so, we aim to stimulate economic activities, create jobs, and promote sustainable practices in the region.\n\nOur commitment to community development and collaboration with government bodies has been instrumental in the successful launch of this project. We commend the Enugu State government for its unwavering support and efforts to enhance the livelihoods of its people. Together, we are working tirelessly to ensure that the mining and export of coal not only benefit the state economically but also improve the overall well-being of the residents.\n\nThe collaboration between CYDAM Group and the Enugu State government is a testament to the power of public-private partnerships in driving positive change. It showcases our joint dedication to advancing economic growth and creating opportunities for the people of Enugu State.\n\nAs we move forward with the coal mining and export project, we remain committed to environmental responsibility, safety, and sustainable mining practices. We believe that this initiative will not only bring economic prosperity to the state but also serve as a model for responsible resource utilization in Nigeria.\n\nStay tuned for more updates on this transformative project that holds the promise of revitalizing Enugu State's coal industry, fostering economic growth, and improving the lives of its residents. Together, we are building a brighter and more sustainable future.",
+    date: "10/03/2023",
+    highlight: "CYDAM Group's Coal Mining and Export Initiative: Fostering Economic Growth and Commending Collaboration with the Enugu State Government",
+    id: 26,
+    img: "/mining/coal_tractor.jpg",
+    ogImg: "https://cydamgroup.org/_next/image?url=%2Fenugu%2Fcoalmining.jpeg&w=640&q=75",
+    title: "Fueling Prosperity: Coal Mining and Export in Enugu State",
+    comment: []
+  }
+,  
+  {
+    author: "Udoh Ekeh",
+    category: "Urban Development",
+    tags: "Urban Development, Industrial Park, Business, Market, Free Trade Zone, Export, Economic growth",
+    tags: "Business, Expansion, Kogi state, Industrial park, Free Trade Zone, Economic growth",
+    content: "In a momentous move that promises to reshape the economic landscape of Kogi State, CYDAM Group is thrilled to announce the extension of its services to this vibrant Nigerian state. With a track record of excellence in a diverse range of sectors, including building and construction, energy generation, mining and manufacturing, logistics and transportation, and business development, CYDAM Group is ready to bring its expertise to Kogi State, catalyzing economic growth and fostering an environment conducive to business operations.\n\nAt the heart of this expansion lies a visionary proposal that has the potential to revolutionize not only Kogi State but also the entire region—the Kogi State Industrial Park. This ambitious project aims to create a Free Trade Zone within the state, setting the stage for remarkable opportunities for local and international businesses alike.\n\nThe Kogi State Industrial Park represents a giant leap toward fostering economic growth, facilitating ease of doing business, and attracting investments to the state. By providing dedicated space and infrastructure for industries and entrepreneurs, it will not only stimulate economic activities but also generate employment opportunities, thereby contributing significantly to the socio-economic development of Kogi State.\n\nCYDAM Group's commitment to community development and collaboration with government bodies forms the bedrock of this proposal. It underlines our dedication to working hand in hand with the government of Kogi State to bring about positive change and uplift the living standards of the people.\n\nThe establishment of the Kogi State Industrial Park exemplifies CYDAM Group's mission to advance economic growth and create a conducive business environment. As we embark on this exciting journey in Kogi State, we look forward to making a lasting impact, fostering prosperity, and becoming an integral part of the state's growth story.\n\nStay tuned for more updates on this transformative project that holds the promise of transforming not only Kogi State but also the entire region, setting the stage for a brighter and more prosperous future.",
+    date: "09/17/2023",
+    highlight: "CYDAM Group Extends Services to Kogi State: Proposing the Kogi State Industrial Park for Economic Growth and Ease of Doing Business",
+    id: 25,
+    img: "/investment/industrial-park.jpg",
+    ogImg: "https://cydamgroup.org/_next/image?url=%2Fkogi%2Findustrialpark.jpeg&w=640&q=75",
+    title: "Expanding Horizons: The Kogi State Industrial Park Proposal",
+    comment: []
+  }
+,  
   
   {
-  id: 21,
-  ogImg: "https://cydamgroup.org/_next/image?url=%2Ffuntua%2Flionspark1.jpeg&w=640&q=75",
-  img: "/funtua/lionspark1.jpeg",
-  title: "Lion's Park Industrial Estate: Enugu State's Gateway to Prosperity through Collaboration",
-  date: "09/02/2023",
-  author: "Sarah Williams",
-  tags: ["Lion's Park Industrial Estate", "Enugu State", "investment", "collaboration"],
-  category: "News",
-  keywords: ["Free Trade Zone", "investment opportunities", "economic development", "Enugu State"],
-  highlight: "Unveiling a new era of economic growth: Lion's Park Industrial Estate and the power of collaboration in Enugu State.",
-  content: [
-    "Enugu State is set to embark on an exciting journey towards economic prosperity with the creation of the Lion's Park Industrial Estate. This visionary project is not just about infrastructure development; it's a testament to the power of collaboration.",
-    "Situated strategically in the heart of the state, Lion's Park Industrial Estate is designed to become a Free Trade Zone, opening new horizons for both local and international investors. This initiative aims to boost economic growth, create jobs, and position Enugu State as a hub for trade and commerce.",
-    "The concept of a Free Trade Zone is a game-changer for businesses and entrepreneurs. It offers a range of incentives, including tax breaks, simplified customs procedures, and a conducive business environment. This encourages investment and paves the way for more investors to participate in the state's development.",
-    "One of the key factors contributing to the success of Lion's Park Industrial Estate is collaboration. The project is a result of joint efforts between the Enugu State Government and private sector partners who share a common vision for the state's economic advancement.",
-    "The government's commitment to infrastructure development and investment-friendly policies has created an environment where businesses can thrive. Private sector leaders have recognized this potential and are actively contributing to the project's success.",
-    "A spokesperson for Lion's Park Industrial Estate, emphasized the significance of collaboration, stating, \"Enugu State is witnessing a transformative initiative that demonstrates what can be achieved when government and the private sector work together. This is a remarkable opportunity for investors and businesses alike.\"",
-    "The establishment of a Free Trade Zone is expected to attract a diverse range of industries, from manufacturing to logistics and services. It will stimulate job creation and enhance the state's competitiveness on both the national and international fronts.",
-    "As Lion's Park Industrial Estate takes shape, Enugu State is poised to become a beacon of economic growth and innovation. The project represents a commitment to a brighter future, where collaboration and investment drive prosperity.",
-    "Stay tuned for updates as Lion's Park Industrial Estate opens its doors to a world of opportunities for Enugu investors and businesses."
-  ],
-  comment: [
+    author: "Emma Ekeh",
+    category: "Logistics",
+    tags: "Logistics, CNG, Delta state, Asaba, transportation, exports, trucks",
+    content: "In a landmark development for Delta State, Nigeria, CYDAM Group is poised to showcase its competence and prowess in delivering a transformative project in collaboration with foreign investors. The project, which centers around the enhancement of transportation infrastructure in Asaba using Compressed Natural Gas (CNG) vehicles, has garnered immense interest from international investors. This interest is projected to bring over 8.4 billion Euros worth of investment to Delta State, paving the way for unprecedented economic growth and sustainable development.\n\nCYDAM Group, a renowned player in various sectors including building and construction, energy generation, mining and manufacturing, logistics and transportation, and business development, has consistently demonstrated its commitment to community development and collaboration with government bodies. This commitment has laid the foundation for the ambitious project that aims to revolutionize transportation in Asaba while fostering economic prosperity.\n\nThe collaboration with foreign investors underscores the international appeal of CYDAM Group's vision and capabilities. It signifies a vote of confidence in the company's ability to execute large-scale projects that not only generate returns for investors but also have a positive impact on local communities and the environment.\n\nThe Compressed Natural Gas (CNG) vehicle project, designed to reduce emissions, lower operational costs, and improve transportation efficiency, has garnered significant attention from investors who recognize its potential for success in Asaba and beyond. The 8.4 billion Euros in expected investment will not only fund the project but also stimulate ancillary industries, create jobs, and contribute to Delta State's economic diversification.\n\nAs Delta State looks to a brighter, more sustainable future, CYDAM Group's collaboration with foreign investors serves as a testament to the company's competence and its dedication to advancing economic growth, environmental responsibility, and community well-being. Stay tuned for more updates on this groundbreaking endeavor that promises to transform not only Asaba but also the entire region.",
+    date: "09/14/2023",
+    highlight: "CYDAM Group's Competence: Attracting Over 8.4 Billion Euros Investment to Delta State in Collaboration with Foreign Investors",
+    id: 23,
+    img: "/logistics/cng_car.jpg",
+    ogImg: "https://cydamgroup.org/_next/image?url=%2Fasaba%2Fcngproject.jpeg&w=640&q=75",
+    title: "Transforming Asaba: CYDAM Group's Competence and Foreign Investment Attraction for CNG Vehicle Project",
+    "comment": []
+  }
+,  
 
-    {
-      user: "Michael",
-      comment: "I'm excited about the opportunities this project will bring to our state. Enugu is set to shine.",
-      date: "09/03/2023"
-    }
-  ]
-},
+  {
+    author: "Lucky James",
+    category: "Logistics",
+    tags: "Logistics, CNG, Delta state, Asaba, transportation, exports, trucks",
+    content: "In a significant step toward revolutionizing transportation in Asaba, CYDAM Group's CEO, Chief Cyril Amadi, recently held a crucial meeting with the Commissioner for Transport of Delta State, Nigeria. The discussion centered around a promising contract business deal that aims to enhance transportation in the region through the adoption of Compressed Natural Gas (CNG) vehicles.\n\nThe meeting, held on [Date], brought together key stakeholders who share a vision for a more sustainable and environmentally friendly transportation system in Asaba. The proposal presented by CYDAM Group outlines the introduction of CNG cars into the city's public transportation fleet.\n\nCompressed Natural Gas (CNG) is known for its eco-friendly benefits, including reduced emissions and cost-effectiveness. By transitioning to CNG vehicles, Asaba's transportation system can contribute to cleaner air, lower operational expenses, and a more sustainable future.\n\nThe partnership between CYDAM Group and the Delta State government underscores a commitment to both economic development and environmental responsibility. It aligns with CYDAM Group's core values of community development and collaboration with government bodies to drive positive change.\n\nStay tuned for more updates on this promising venture that holds the potential to transform the way people move around Asaba and sets an example for sustainable transportation practices in Nigeria.",
+    "date": "09/15/2023",
+    "highlight": "Enhancing Transportation in Asaba: CYDAM Group's CEO Meets with Delta State Commissioner for a Transformative CNG Vehicle Deal",
+    id: 22,
+    img: "/logistics/delta_transport5.jpeg",
+    imgList: ["/logistics/delta_transport5.jpeg", "/logistics/delta_transport1.jpeg", "/logistics/delta_transport2.jpeg","/logistics/delta_transport3.jpeg","/logistics/delta_transport4.jpeg",],
+    ogImg: "https://cydamgroup.org/_next/image?url=%2Fasaba%2Fcngmeeting.jpeg&w=640&q=75",
+    title: "Meeting with the Commissioner for Transport: Advancing Transportation with CNG Vehicles in Asaba",
+    comment: []
+  }
+,  
+  
+  {
+    author:"Sarah Williams",
+    category:"News",
+    content: "Enugu State is set to embark on an exciting journey towards economic prosperity with the creation of the Lion's Park Industrial Estate. \n\n This visionary project is not just about infrastructure development; it's a testament to the power of collaboration.\n\n Situated strategically in the heart of the state, Lion's Park Industrial Estate is designed to become a Free Trade Zone, opening new horizons for both local and international investors. \n\nThis initiative aims to boost economic growth, create jobs, and position Enugu State as a hub for trade and commerce.",
+    date: "09/02/2023",
+    highlight: "Unveiling a new era of economic growth: Lion's Park Industrial Estate and the power of collaboration in Enugu State.",
+    id:21,
+    img:"/funtua/lionspark1.jpeg",
+    ogImg:"https://cydamgroup.org/_next/image?url=%2Ffuntua%2Flionspark1.jpeg&w=640&q=75",
+    title:"Lion's Park Industrial Estate: Enugu State's Gateway to Prosperity through Collaboration",
+    comment: [
+
+      {
+        user: "Oliver",
+        comment: "I'm excited to see how this dry port will boost trade and logistics in the region. Katsina State is heading in the right direction.",
+        date: "09/02/2023"
+      },
+      {
+        user: "Aisha",
+        comment: "The government's support for this project is commendable. It's a testament to their commitment to economic development.",
+        date: "09/01/2023"
+      }
+    ]
+  },
   {
     id: 20,
     ogImg: "https://cydamgroup.org/_next/image?url=%2Ffuntua%2Ffuntua2.jpeg&w=640&q=75",

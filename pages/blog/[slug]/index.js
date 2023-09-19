@@ -106,7 +106,7 @@ const BlogId = ({data,}) => {
                     </div>
 
                     <div className="grid gap-8 px-4 sm:px-10">
-                            <ReactMarkdown>{content?.join('\n\n')}</ReactMarkdown>
+                            <ReactMarkdown>{content}</ReactMarkdown>
 
                     </div>
                 </div>
