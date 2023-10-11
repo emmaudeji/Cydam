@@ -17,7 +17,6 @@ import TestimonyCard from "@/component/Cards/TestimonyCard"
 import Blog from "@/component/Sections/Blog"
 
 export default function Home() {
-  const {devotional} = useStateContext()
 
 
   return (

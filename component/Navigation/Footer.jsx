@@ -17,7 +17,7 @@ const Footer = () => {
                 <PlainBoxCard>
                   <div className=" text-white bg-blue-700 p-8 ">
                     <div className="logo">
-                      <h2 className='text-4xl font-bold '>Cydam Global</h2>
+                      <Link href={'#'} className='text-3xl md:text-4xl font-bold '>Cydam Global</Link>
                     </div>
                     <p className='py-2 text-lg '>
                         Providing low cost housing and revamping urban lifestyle in Africa 

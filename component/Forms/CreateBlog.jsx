@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import CreatableSelect from 'react-select/creatable';
 import ImageUploadForm from './ImageUploadForm';
+import MultipleFileUpload from './MultipleFileUpload';
 
 
     const options = [
@@ -146,23 +147,23 @@ const fileToBase64 = (file) => {
 
             console.log('Success', newFormData);
             
-            const response = await fetch('/api/blogs/create', {
-              method: 'POST',
-              body: JSON.stringify([imageData]),
-              headers: {
-                'Content-Type': 'application/json',
-              },
-            });
+            // const response = await fetch('/api/testing/googledriveapi', {
+            //   method: 'POST',
+            //   body: JSON.stringify([imageData]),
+            //   headers: {
+            //     'Content-Type': 'application/json',
+            //   },
+            // });
 
-            if (response.status === 200) {
-              const data = await response.json();
-              console.log('Success', data);
+            // if (response.status === 200) {
+            //   const data = await response.json();
+            //   console.log('Success', data);
 
-              resetForm();
-            } else {
-              const data = await response.json();
-              console.error('API error:', data);
-            }
+            //   resetForm();
+            // } else {
+            //   const data = await response.json();
+            //   console.error('API error:', data);
+            // }
           } catch (error) {
             console.error('Fetch error:', error);
           }
@@ -205,34 +206,34 @@ const fileToBase64 = (file) => {
         console.log(`Option category selected:`, selectedOption);
       };
 
-      const handleImgChange = async (e) => {
-        const selectedFile = e.target.files[0]; // Get the first selected file
-        if (selectedFile) {
-          const imageData = await fileToBase64(selectedFile);
-          console.log('eeeeeeee',imageData)
-          setFormData(prev=>{
-            return {
-              ...prev,
-              img: imageData
-            }
-          })
-        } else {
-          setErrors(prev=> {return {...prev, img: 'Please select an image file.'}});
-        }
-      };
+      // const handleImgChange = async (e) => {
+      //   const selectedFile = e.target.files[0]; // Get the first selected file
+      //   if (selectedFile) {
+      //     const imageData = await fileToBase64(selectedFile);
+      //     console.log('eeeeeeee',imageData)
+      //     setFormData(prev=>{
+      //       return {
+      //         ...prev,
+      //         img: imageData
+      //       }
+      //     })
+      //   } else {
+      //     setErrors(prev=> {return {...prev, img: 'Please select an image file.'}});
+      //   }
+      // };
 
-      const handleImageChange = (e) => {
-        const selectedFiles = Array.from(e.target.files);
+      // const handleImageChange = (e) => {
+      //   const selectedFiles = Array.from(e.target.files);
       
-        // Check if any files were selected
-        if (selectedFiles.length > 0) {
-          setSelectedImages(selectedFiles);
-        } else {
-          setSelectedImages([]);
-          setErrors(prev=> {return {...prev, images: 'Please select an image file.'}});
+      //   // Check if any files were selected
+      //   if (selectedFiles.length > 0) {
+      //     setSelectedImages(selectedFiles);
+      //   } else {
+      //     setSelectedImages([]);
+      //     setErrors(prev=> {return {...prev, images: 'Please select an image file.'}});
 
-        }
-      };
+      //   }
+      // };
       
       
       return (
@@ -344,7 +345,7 @@ const fileToBase64 = (file) => {
             {errors.tags && <p className="text-red-500">{errors.tags}</p>}
           </div>
 
-          <div className="mb-4">
+          {/* <div className="mb-4">
             <label htmlFor="img" className="block font-medium text-gray-700">
               Image (Upload a single image for the blog banner)
             </label>
@@ -357,25 +358,14 @@ const fileToBase64 = (file) => {
               className="mt-1 w-full"
             />
             {errors.img && <p className="text-red-500">{errors.img}</p>}
-          </div>
-
-          {/* <div className="mb-4">
-            <label htmlFor="images" className="block font-medium text-gray-700">
-              Images (Upload multiple images for image slides.)
-            </label>
-            <input
-              type="file"
-              id="images"
-              name="images"
-              accept="image/*" // Specify accepted file types (images in this case)
-              multiple // Allow multiple file selection
-              onChange={handleImageChange} // Add an event handler for file input changes
-              className="mt-1 w-full"
-            />
-            {errors.images && <p className="text-red-500">{errors.images}</p>}
           </div> */}
 
-          <ImageUploadForm imageData={imageData} setImageData={setImageData}/>
+          <div className="mb-4">
+            <MultipleFileUpload onFilesUploaded={setImageData} setErrors={setErrors} name={'images'}/>
+            {errors.images && <p className="text-red-500">{errors.images}</p>}
+          </div>
+
+          {/* <ImageUploadForm imageData={imageData} setImageData={setImageData}/> */}
 
           <div className="py-8">
             <img src={formData.img} alt="sssssss" className='w-80 h-96 border'/>

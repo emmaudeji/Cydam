@@ -1,5 +1,8 @@
+import Googledrivepicker from '@/Hooks/Googledrivepicker';
 import BlogPostForm from '@/component/Forms/CreateBlog';
+import Image from 'next/image';
 import React from 'react'
+import UploadImages from '../../component/Forms/UploadImages';
 
 const CmsPage = () => {
 
@@ -17,6 +20,8 @@ const CmsPage = () => {
   
   }
 
+  // https://drive.google.com/file/d/1KrFnKulnLXzvkAJDTPyI3flZqaEebA75/view?pli=1
+const imgfile = 'https://drive.google.com/uc?export=view&id=16hmkstooJOUFsCeNCt3-SIGkGHqcRZaM'
 
   return (
     <div className='m-auto max-w-7xl pt-40'>
@@ -31,6 +36,11 @@ const CmsPage = () => {
         <button onClick={fetchblogs} className="px-10 py-3 my-8 bg-blue-600 text-white text-center">
           Fetch Blogs
         </button>
+
+        <Googledrivepicker/>
+        <Image width={300} height={300} alt='test' src={imgfile}/>
+
+        <UploadImages/>
 
 
         <div className="mt-12">
