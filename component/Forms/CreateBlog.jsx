@@ -2,11 +2,11 @@ import { useState } from 'react';
 import CreatableSelect from 'react-select/creatable';
 import ImageUploadForm from './ImageUploadForm';
 import MultipleFileUpload from './MultipleFileUpload';
+import UploadImages from './UploadImages';
 
 
     const options = [
       { value: 'Real Estate', label: 'Real Estate' },
-
       { value: 'Building Construction', label: 'Building Construction' },
       { value: 'Project Management', label: 'Project Management' },
       { value: 'Waste Management', label: 'Waste Management' },
@@ -14,7 +14,9 @@ import MultipleFileUpload from './MultipleFileUpload';
       { value: 'News', label: 'News' },
       { value: 'Urban Development', label: 'Urban Development' },
     ];
+
     `Real Estate`, `Building Construction`, `Project Management`, `Waste Management`, `Energy`, `News`, 'Urban Development'
+
     const optionsCategory= [
       { value: 'Real Estate', label: 'Real Estate' },
       { value: 'Building Construction', label: 'Building Construction' },
@@ -23,37 +25,16 @@ import MultipleFileUpload from './MultipleFileUpload';
       { value: 'Energy', label: 'Energy' },
       { value: 'News', label: 'News' },
       { value: 'Urban Development', label: 'Urban Development' },
-      // Add more tags as needed
     ];
-
-
-    // Function to convert a File to Base64
-const fileToBase64 = (file) => {
-  return new Promise((resolve, reject) => {
-    const reader = new FileReader();
-    
-    reader.onload = () => {
-      const base64String = reader.result.split(',')[1];
-      resolve(base64String);
-    };
-
-    reader.onerror = (error) => {
-      reject(error);
-    };
-
-    reader.readAsDataURL(file);
-  });
-};
-
 
     const BlogPostForm = () => {
       const [selectedTags, setSelectedTags] = useState([]);
       const [selectedCategory, setSelectedCategory] = useState('');
       const [selectedImages, setSelectedImages] = useState([]);
       const [imageData, setImageData] = useState('');
+      const [files, setFiles] = useState(null);
 
       const [formData, setFormData] = useState({
-        
         img: '',
         title: '',
         date: '',
@@ -122,8 +103,7 @@ const fileToBase64 = (file) => {
         if (!formData.images.trim()) {
           newErrors.images = 'Multiple Images is required.';
         }
-      
-      
+    
         // Set the new errors object
         setErrors(newErrors);
       
@@ -132,45 +112,6 @@ const fileToBase64 = (file) => {
       };
       
 
-      const handleSubmit = async (e) => {
-        e.preventDefault();
-      
-        if (true) {
-          try {
-
-            const newFormData = {
-              ...formData,
-              tags: selectedTags.join(', '),
-              img: imageData,
-              // images: selectedImages.map((file, index)=> (`image${index + 1}`, file))
-               }
-
-            console.log('Success', newFormData);
-            
-            // const response = await fetch('/api/testing/googledriveapi', {
-            //   method: 'POST',
-            //   body: JSON.stringify([imageData]),
-            //   headers: {
-            //     'Content-Type': 'application/json',
-            //   },
-            // });
-
-            // if (response.status === 200) {
-            //   const data = await response.json();
-            //   console.log('Success', data);
-
-            //   resetForm();
-            // } else {
-            //   const data = await response.json();
-            //   console.error('API error:', data);
-            // }
-          } catch (error) {
-            console.error('Fetch error:', error);
-          }
-        }
-      };
-
-      // Helper function to reset the form and related states
       const resetForm = () => {
         setFormData({
           ogImg: '',
@@ -189,6 +130,43 @@ const fileToBase64 = (file) => {
         setSelectedTags([]);
         setErrors({});
       };
+
+      const handleSubmit = async (e) => {
+        e.preventDefault();
+      
+        if (validateForm) {
+          try {
+            const newFormData = {
+              ...formData,
+              tags: selectedTags.join(', '),
+               }
+
+             
+            console.log('Success', newFormData);
+            
+            const response = await fetch('/api/blogs/create', {
+              method: 'POST',
+              body: JSON.stringify([newFormData]),
+              headers: {
+                'Content-Type': 'application/json',
+              },
+            });
+
+            if (response.status === 200) {
+              const data = await response.json();
+              console.log('Success', data);
+              resetForm();
+            } else {
+              const data = await response.json();
+              console.error('API error:', data);
+            }
+          } catch (error) {
+            console.error('Fetch error:', error);
+          } finally {
+            resetForm()
+          }
+        }
+      };
  
       const tagChange = (selectedOption) => {
         setSelectedTags(selectedOption?.map((item)=> item.value));
@@ -205,40 +183,11 @@ const fileToBase64 = (file) => {
         })
         console.log(`Option category selected:`, selectedOption);
       };
-
-      // const handleImgChange = async (e) => {
-      //   const selectedFile = e.target.files[0]; // Get the first selected file
-      //   if (selectedFile) {
-      //     const imageData = await fileToBase64(selectedFile);
-      //     console.log('eeeeeeee',imageData)
-      //     setFormData(prev=>{
-      //       return {
-      //         ...prev,
-      //         img: imageData
-      //       }
-      //     })
-      //   } else {
-      //     setErrors(prev=> {return {...prev, img: 'Please select an image file.'}});
-      //   }
-      // };
-
-      // const handleImageChange = (e) => {
-      //   const selectedFiles = Array.from(e.target.files);
-      
-      //   // Check if any files were selected
-      //   if (selectedFiles.length > 0) {
-      //     setSelectedImages(selectedFiles);
-      //   } else {
-      //     setSelectedImages([]);
-      //     setErrors(prev=> {return {...prev, images: 'Please select an image file.'}});
-
-      //   }
-      // };
-      
       
       return (
         <div className="max-w-md mx-auto p-6 bg-white rounded-md shadow-md">
         <h2 className="text-2xl font-semibold mb-4">Create Blog Post</h2>
+        
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
             <label htmlFor="title" className="block font-medium text-gray-700">
@@ -266,10 +215,10 @@ const fileToBase64 = (file) => {
               value={formData.author}
               onChange={handleChange}
               className="mt-1 p-2 w-full border rounded-md focus:outline-none focus:ring focus:border-blue-500"
-              
             />
             {errors.author && <p className="text-red-500">{errors.author}</p>}
           </div>
+
           <div className="mb-4">
             <label htmlFor="category" className="block font-medium text-gray-700">
               Category (Select or type and enter a different Category)
@@ -295,7 +244,6 @@ const fileToBase64 = (file) => {
               value={formData.date}
               onChange={handleChange}
               className="mt-1 p-2 w-full border rounded-md focus:outline-none focus:ring focus:border-blue-500"
-              
             />
             {errors.date && <p className="text-red-500">{errors.date}</p>}
           </div>
@@ -345,31 +293,12 @@ const fileToBase64 = (file) => {
             {errors.tags && <p className="text-red-500">{errors.tags}</p>}
           </div>
 
-          {/* <div className="mb-4">
-            <label htmlFor="img" className="block font-medium text-gray-700">
-              Image (Upload a single image for the blog banner)
-            </label>
-            <input
-              type="file"
-              id="img"
-              name="img"
-              accept="image/*" // Specify accepted file types (images in this case)
-              onChange={handleImgChange} // Add an event handler for file input changes
-              className="mt-1 w-full"
-            />
-            {errors.img && <p className="text-red-500">{errors.img}</p>}
-          </div> */}
-
           <div className="mb-4">
             <MultipleFileUpload onFilesUploaded={setImageData} setErrors={setErrors} name={'images'}/>
             {errors.images && <p className="text-red-500">{errors.images}</p>}
           </div>
 
-          {/* <ImageUploadForm imageData={imageData} setImageData={setImageData}/> */}
 
-          <div className="py-8">
-            <img src={formData.img} alt="sssssss" className='w-80 h-96 border'/>
-          </div>
 
           <div className="mt-4">
             <button

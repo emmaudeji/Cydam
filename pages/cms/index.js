@@ -21,7 +21,7 @@ const CmsPage = () => {
   }
 
   // https://drive.google.com/file/d/1KrFnKulnLXzvkAJDTPyI3flZqaEebA75/view?pli=1
-const imgfile = 'https://drive.google.com/uc?export=view&id=16hmkstooJOUFsCeNCt3-SIGkGHqcRZaM'
+const imgfile = 'https://drive.google.com/uc?export=view&id=1B77jOOqU6KOuqu25dKZxg3phCbYzAlkf'
 
   return (
     <div className='m-auto max-w-7xl pt-40'>

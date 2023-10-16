@@ -33,5 +33,4 @@ export default async function handler(req, res) {
         console.error("Error fetching data:", error.message);
         res.status(500).json({ error: "An error occurred while fetching data" });
       }
-
 }
