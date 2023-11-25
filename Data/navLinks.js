@@ -36,7 +36,7 @@ import { services } from "./services"
 export const navLinks = [
     {
         id: 0,
-        title: `About Us`,
+        title: `About us`,
         link: `/about`
     },
     {
@@ -58,7 +58,7 @@ export const navLinks = [
     },
     {
         id: 3,
-        title: `Contact Us`,
+        title: `Contact us`,
         link: `/contact`
     },
     {

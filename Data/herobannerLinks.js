@@ -2,7 +2,7 @@ export const herobannerLinks = [
     {
         id: 0,
         title: `Building Communities, Enriching Lives`,
-        description: `We are Delivering innovative construction solutions that uplift communities. Our commitment to Viable Partnerships, integrity, and sustainability drives us to create lasting impact in the construction industry.`,
+        description: `We are delivering innovative construction solutions that uplift communities. Our commitment to viable partnerships, integrity, and sustainability drives us to create lasting impact in the construction industry.`,
         btnLink1: `/blogs/building_communities`,
         btnText1: `Learn More`,
         btnLink2: ``,

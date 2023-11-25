@@ -21,7 +21,7 @@ export default async function handler(req, res) {
 
         const newItem = req.body;     
 console.log(newItem)
-const ar = [{"ogImg":"d","img":"d","title":"","date":"f","author":"f","category":"f","highlight":"f","content":"e","tags":"r, e","images":"/gg"}]
+
 
         const newRow = await sheet.addRows(newItem);
 

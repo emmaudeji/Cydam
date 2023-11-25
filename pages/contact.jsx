@@ -13,7 +13,7 @@ const contact = () => {
       <PageHeroBanner heading='Contact Us' img="/housing/estate2.jpg" page={`Home > Services > Contact`}/>
 
       <div>
-       <ContactSection component={<ContactForm/>} heading='Send Us A Message' img='/housing/house3.jpg'/>
+       <ContactSection component={<ContactForm/>} heading='Send us a message' img='/housing/house3.jpg'/>
        <ContactDetails/>
        <GoogleMap/>
     </div>

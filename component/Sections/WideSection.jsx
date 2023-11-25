@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const WideSection = ({heading, text, img, btnText, btnLink}) => {
   return (
-    <div className=' h-[70vh] capitalize relative'>
+    <div className=' h-[70vh]  relative'>
       
      
       <div className='w-full h-full overflow-hidden'>
@@ -18,7 +18,7 @@ const WideSection = ({heading, text, img, btnText, btnLink}) => {
             <h2 className='text-4xl sm:text-5xl font-bold '>
                    {heading} 
                 </h2>
-                <p className='text-xl font-semibold capitalize'>
+                <p className='text-xl font-semibold '>
                   {text}
                     
                 </p>

@@ -20,7 +20,7 @@ const Newsletter = () => {
                 </div>
                 <div className="font-bold pt-20 hidden md:block">
                     <h4>GET INSTANT UPDATES</h4>
-                    <h2 className='text-3xl'>Subcribe To Our Newsletter</h2>
+                    <h2 className='text-3xl'>Subcribe to our newsletter</h2>
                 </div>
 
             </div>
@@ -29,13 +29,13 @@ const Newsletter = () => {
             
                 <div className="font-bold text-white  md:hidden">
                     <h4>GET INSTANT UPDATES</h4>
-                    <h2 className='text-2xl'>Subcribe To Our Newsletter</h2>
+                    <h2 className='text-2xl'>Subcribe to our newsletter</h2>
                 </div>
                 <form onSubmit={handleSubmit} 
                 className='grid md:flex gap-2' >
                     <SimpleInput icon={<AiOutlineMail/>} onChange={(e)=>setEmail(e.target.value)} />
                     <div className=''>
-                    <button type='submit' className='rounded-full py-4 px-6 bg-blue-600 w-40 h-full text-white' >Subcribe Now</button>
+                    <button type='submit' className='rounded-full py-4 px-6 bg-blue-600 w-40 h-full text-white' >Subcribe now</button>
                     </div>
                 </form>
             
