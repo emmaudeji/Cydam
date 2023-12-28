@@ -13,20 +13,19 @@ export const services = [
     },
     {
         id: 1,
-        title: `Construction And Engineering `,
+        title: `Construction and Engineering `,
         link: `/services/construction`,
         icon: <MdConstruction/>,
         linkText: `Read more`,
-        text: `From Foundations to Highways: Innovative and Modern Solutions in Construction and Building`
+        text: `From foundations to highways: innovative and modern solutions in construction and building`
     },
     {
         id: 2,
-        title: `Energy And Waste Management`,
+        title: `Energy and Waste Management`,
         link: `/services/energy`,
         icon: <MdOutlineFactory/>,
         linkText: `Read more`,
-        text: ` Co-locating wind, solar and waste to energy plants
-        to save cost and increase efficiency.`
+        text: ` Co-locating wind, solar and waste to energy plants to save cost and increase efficiency.`
     },
     {
         id: 3,
@@ -34,7 +33,7 @@ export const services = [
         link: `/services/investment`,
         icon: <AiOutlineProject/>,
         linkText: `Read more`,
-        text: `Maximize Your Investment Returns and Achieve Your Business Goals with Expertise and Guidance.`
+        text: `Maximize your investment returns and achieve your business goals with expertise and guidance.`
     },
     {
         id: 4,
@@ -42,7 +41,7 @@ export const services = [
         link: `/services/logistics`,
         icon: <MdOutlineEngineering/>,
         linkText: `Read more`,
-        text: `Drive Your Business's Growth and Maximize Your Profits with Comprehensive Export and Logistics Services.`
+        text: `Drive your business's growth and maximize your profits with comprehensive export and logistics services.`
     },
     {
         id: 5,
@@ -50,7 +49,7 @@ export const services = [
         link: `/services/mining`,
         icon: <MdAddRoad/>,
         linkText: `Read more`,
-        text: `Unleashing the Power of Mining and Manufacturing: Innovative and Expertise and Solutions`
+        text: `Unleashing the power of mining and manufacturing: Innovative and expertise and solutions`
     },
     
 ]

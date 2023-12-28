@@ -10,7 +10,7 @@ export const credibility = [
     },
     {
         id: 1,
-        text: 'Low cost Housing ',
+        text: 'Low Cost Housing ',
         title: '100%',
         icon: <MdHouseSiding/>,
         link: '/about'

@@ -17,7 +17,7 @@ const invest = () => {
 
       <AboutServices
       heading={`Unlock the potential of African markets with us`}
-      note1='Invest in Africa with confidence, with our expert investment solutions' note2='Navigating regulatory and compliance issues in African markets? Let us guide you to success"' note3={`From licensing to ongoing compliance, we've got you covered`} img1='/investment/looking-statistics.avif' img2='/investment/man-2-statistics.avif'
+      note1='Invest in Africa with confidence, with our expert investment solutions' note2='Navigate regulatory and compliance issues in African markets? Let us guide you to success' note3={`From licensing to ongoing compliance, we've got you covered`} img1='/investment/looking-statistics.avif' img2='/investment/man-2-statistics.avif'
       component={<AboutInvestment btnText='Get Started' btnLink='/contact'/>}
       
       />
@@ -34,7 +34,7 @@ const invest = () => {
              heading='Untap the benefits of investing in African markets'
              text={`From licensing to ongoing compliance, we've got you covered: Explore our investment and free trade zone services. We all you need to maximize profit.`}
              img='/investment/two-men-statistics.avif'
-             btnText='Contact Us' btnLink='/contact'
+             btnText='Contact us' btnLink='/contact'
           />
 
           <Services/>

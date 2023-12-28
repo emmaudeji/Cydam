@@ -8,12 +8,12 @@ const AboutConstruction = ({btnText, btnLink}) => {
             <h5 className="text-lg font-semibold ">
             The strength, durability and very precise assembly as well as the cold-rolling gives you entirely new opportunities and solid solutions.
             </h5>
-            <div className="grid gap-2 capitalize">
+            <div className="grid gap-2 ">
             {
                 [
                     `Build with our steel frame solutions`,
-                    `Reduce Project Costs with modern technology`,
-                   ` Exceptional Quality, Unbeatable Value`,
+                    `Reduce project costs with modern technology`,
+                   ` Exceptional quality, unbeatable value`,
                     `Obtain the benefits of cold-rolled steel`,
                    
                 ].map((item, i)=>(

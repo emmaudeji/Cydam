@@ -8,12 +8,12 @@ const AboutRealEstate = ({btnText, btnLink}) => {
             <h5 className="text-lg font-semibold ">
              We build homes and cities that are modern and nurturing, clean and purposeful and make it affordable for middle class families in Africa with maximum luxury .
             </h5>
-            <div className="grid gap-2 capitalize">
+            <div className="grid gap-2 ">
             {
                 [
-                    `Affordable Luxury Homes for all`,
-                    `Modern Designs, Affordable Prices`,
-                   ` Exceptional Quality, Unbeatable Value`,
+                    `Affordable luxury homes for all`,
+                    `Modern designs, affordable prices`,
+                   ` Exceptional quality, unbeatable value`,
                     `Get the best support among all vendors`,
                    
                 ].map((item, i)=>(

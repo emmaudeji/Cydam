@@ -9,13 +9,13 @@ const AboutInvestment = ({btnLink, btnText}) => {
             <h5 className="text-lg font-semibold ">
             We provide investment and free trade zone services to help our clients navigate regulatory and compliance issues while investing in African markets.
             </h5>
-            <div className="grid gap-2 capitalize">
+            <div className="grid gap-2 ">
             {
                 [
                     `Schedule a consultation to discuss your investment`,
                     `We develop tailored solutions that address your goals`,
-                   ` Navigate regulatory and compliance issues`,
-                    `Commitment to ethical and sustainable business practices.`,
+                   ` We help you navigate regulatory and compliance issues`,
+                    `We are commited to ethical and sustainable business practices.`,
                    
                 ].map((item, i)=>(
                     <div className="flex gap-4" key={i}>

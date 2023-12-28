@@ -9,7 +9,7 @@ const Highlight = ({btnText, btnLink, highlight, intro})  => {
             <h5 className="text-lg font-semibold ">
                 {intro}
             </h5>
-            <div className="grid gap-2 capitalize">
+            <div className="grid gap-2 ">
             {
                 highlight.map((item, i)=>(
                     <div className="flex gap-4" key={i}>

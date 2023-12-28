@@ -6,14 +6,14 @@ const AboutEnergy = ({btnText, btnLink}) => {
     <div className="grid gap-4">
             
             <h5 className="text-lg font-semibold ">
-            {`Providing Sustainable Solutions through a Mix of Solar and Wind Power, and Waste Management for a greener tomorrow.`}
+            {`Providing sustainable solutions through a mix of solar and wind power, and waste management for a greener tomorrow.`}
             </h5>
-            <div className="grid gap-2 capitalize">
+            <div className="grid gap-2 ">
             {
                 [
                     `Build with our steel frame solutions`,
-                    `Reduce Project Costs with modern technology`,
-                   ` Exceptional Quality, Unbeatable Value`,
+                    `Reduce project costs with modern technology`,
+                   ` Exceptional quality, unbeatable value`,
                     `Obtain the benefits of cold-rolled steel`,
                    
                 ].map((item, i)=>(

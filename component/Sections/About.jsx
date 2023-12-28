@@ -9,7 +9,7 @@ export const AboutCompany = () => {
    
             <div className="flex gap-2">
                 {
-                    ['Vision', 'Mission', 'Philosopy'].map((item, i) => (
+                    ['Vision', 'Mission', 'Philosophy'].map((item, i) => (
                         <div onClick={()=>setIndex(i)} 
                         className={`py-2 px-3 rounded-full border-2 border-blue-400 hover:bg-blue-400 duration-300 hover:text-white cursor-pointer ${index===i ? "bg-blue-400 text-white" : ''}`} key={i}>
                             <p>{item}</p>
@@ -18,7 +18,7 @@ export const AboutCompany = () => {
                 }
             </div>
           
-            <div className="capitalize">
+            <div className="">
                 {
                     aboutlist[index]
                 }
@@ -57,12 +57,11 @@ export const Mission = () => (
 export const Philosophy = () => (
     <div className="grid gap-3">
         <p className="">
-        We believe Sustainable development and responsible construction practices are key to building a brighter future for Africa.
+        We believe sustainable development and responsible construction practices are key to building a brighter future for Africa.
         </p>
         <p>
         We believe that by combining cutting-edge technology with a deep understanding of our clients' needs, we can create homes and communities that are truly transformative.
         </p>
-        <p>We Believe in Success through exceptional value and lasting relationships.</p>
-        
+        <p>We Believe in success through exceptional value and lasting relationships.</p>
     </div>
 )
