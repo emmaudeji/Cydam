@@ -19,16 +19,16 @@ const mining = () => {
       <PageHeroBanner heading='Mining And Manufacturing ' img="/mining/factory.jpg" page={`Home > Services > Manufacturing`}/>
 
       <AboutServices
-      heading={`Innovative Processes, Sustainable Practices: Redefining Mining and Manufacturing`}
-      note1='Driving Innovation in Mining and Manufacturing' note2='Quality, Precision and Customized Solutions for Complex Mining and Manufacturing Challenges' note3={`From Extraction to Production, We Deliver End-to-End Solutions`} img1='/mining/black man mining.jpg' img2='/mining/trucks mining.jpg'
+      heading={`Innovative processes, sustainable practices: redefining mining and manufacturing`}
+      note1='Driving innovation in mining and manufacturing' note2='Quality, precision and customized solutions for complex mining and manufacturing challenges' note3={`From extraction to production, We deliver end-to-end solutions`} img1='/mining/black man mining.jpg' img2='/mining/trucks mining.jpg'
       component={<Highlight 
         intro='With our deep expertise and cutting-edge solutions, we revolutionize the way resources are extracted, processed, and transformed into high-quality products. ' 
         highlight={
             [  
               `Experience cutting-edge technologies`,
               `End-to-end manufacturing solutions `,
-              `Leverage on Sustainability practices`,
-              `Gauranteed Quality assurance`
+              `Leverage on sustainability practices`,
+              `Gauranteed quality assurance`
             ]
           } 
         btnText='Get Started' btnLink='/contact'/>}
